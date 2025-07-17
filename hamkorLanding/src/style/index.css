@@ -68,6 +68,9 @@ body {
   color: #7a7a7a;
   margin-bottom: 3px;
 }
+.header nav .nav-price .bank-price .price .price1 h5 {
+  font-weight: 500;
+}
 .header nav .nav-price .navBtn {
   padding: 10px 20px;
   border: none;
