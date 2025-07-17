@@ -1,5 +1,5 @@
 @use "./variable.scss" as *;
-@mixin button($padding) {
+@mixin button($padding,  $white) {
   padding: ($padding);
   border: none;
   border-radius: 6px;

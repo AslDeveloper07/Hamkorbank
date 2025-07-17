@@ -3,7 +3,10 @@
 .header {
   background-color: $body-bg-color;
   border-bottom: 1px solid $navTop-bg-color;
-
+// position: fixed;
+// right: 0;
+// left: 0;
+// top: 0;
   nav {
     display: flex;
     justify-content: space-between;
@@ -11,8 +14,6 @@
       display: flex;
       align-items: center;
       gap: 30px;
-      img {
-      }
       ul {
         display: flex;
         gap: 20px;
@@ -23,7 +24,6 @@
           padding: 20px 0;
           border-bottom: 2px solid #00000000;
           transition: all 0.4s ease;
-
           &:hover {
             border-bottom: 2px solid $button-bg-color;
           }
@@ -55,12 +55,11 @@
               font-weight: 500
             }
           }
-          .price2 {
-          }
+
         }
       }
       .navBtn {
-        @include mixins.button(10px 20px);
+        @include mixins.button(10px 20px, $white);
       }
     }
   }
