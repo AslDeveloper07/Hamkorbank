@@ -1,0 +1,14 @@
+//Main folder in links
+@use './main/universal.scss';
+@use './main/variable.scss';
+@use './main/mixins.scss';
+// Layouts in components folder scss links
+@use './layouts/components/navTop.scss';
+@use './layouts/components/navbar.scss';
+@use './layouts/components/slider.scss';
+@use './layouts/components/card.scss';
+@use './layouts/components/grid.scss';
+@use './layouts/components/about.scss';
+@use './layouts/components/hamkorMobile.scss';
+@use './layouts/components/calling.scss';
+@use './layouts/components/footer.scss';
