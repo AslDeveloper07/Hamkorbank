@@ -19,16 +19,20 @@ body {
   background-color: #f0f2f5;
   border-bottom: 1px solid #dce2eb;
 }
-.header nav div {
+.header nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header nav .navLink {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-.header nav div ul {
+.header nav .navLink ul {
   display: flex;
   gap: 20px;
 }
-.header nav div ul .navItem {
+.header nav .navLink ul .navItem {
   list-style: none;
   font-size: 15px;
   cursor: pointer;
@@ -36,8 +40,40 @@ body {
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   transition: all 0.4s ease;
 }
-.header nav div ul .navItem:hover {
+.header nav .navLink ul .navItem:hover {
   border-bottom: 2px solid #35a354;
+}
+.header nav .nav-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.header nav .nav-price .bank-price {
+  background-color: #dce2eb;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.header nav .nav-price .bank-price .price {
+  display: flex;
+  gap: 10px;
+}
+.header nav .nav-price .bank-price .price .price1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header nav .nav-price .bank-price .price .price1 p {
+  font-size: 9px;
+  color: #7a7a7a;
+  margin-bottom: 3px;
+}
+.header nav .nav-price .navBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */

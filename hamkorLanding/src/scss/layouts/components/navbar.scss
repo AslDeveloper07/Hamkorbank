@@ -1,10 +1,13 @@
+@use "./../../main/mixins.scss";
 @use "./../../main/variable.scss" as *;
 .header {
   background-color: $body-bg-color;
-      border-bottom: 1px solid $navTop-bg-color;
+  border-bottom: 1px solid $navTop-bg-color;
 
   nav {
-    div {
+    display: flex;
+    justify-content: space-between;
+    .navLink {
       display: flex;
       align-items: center;
       gap: 30px;
@@ -19,14 +22,45 @@
           font-size: 15px;
           cursor: pointer;
           padding: 20px 0;
-            border-bottom: 2px solid #00000000;
-            transition: all 0.4s ease;
+          border-bottom: 2px solid #00000000;
+          transition: all 0.4s ease;
 
-          &:hover{
+          &:hover {
             border-bottom: 2px solid $button-bg-color;
-
           }
         }
+      }
+    }
+    .nav-price {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      .bank-price {
+        background-color: $navTop-bg-color;
+        padding: 5px 20px;
+        border-radius: 5px;
+        .price {
+          display: flex;
+          gap: 10px;
+          .price1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p {
+              font-size: 9px;
+              color: $poragraph-color;
+              margin-bottom: 3px;
+            }
+            h5 {
+            }
+          }
+          .price2 {
+          }
+        }
+      }
+      .navBtn {
+        @include mixins.button(10px 20px);
       }
     }
   }
