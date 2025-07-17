@@ -1,0 +1,33 @@
+@use "./../../main/variable.scss" as *;
+.header {
+  background-color: $body-bg-color;
+      border-bottom: 1px solid $navTop-bg-color;
+
+  nav {
+    div {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      img {
+      }
+      ul {
+        display: flex;
+        gap: 20px;
+
+        .navItem {
+          list-style: none;
+          font-size: 15px;
+          cursor: pointer;
+          padding: 20px 0;
+            border-bottom: 2px solid #00000000;
+            transition: all 0.4s ease;
+
+          &:hover{
+            border-bottom: 2px solid $button-bg-color;
+
+          }
+        }
+      }
+    }
+  }
+}

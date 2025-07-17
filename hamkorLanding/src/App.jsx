@@ -1,10 +1,13 @@
-import React from 'react'
+import { useState } from 'react'
+import './style/index.css'
+import Navbar from './components/Navbar'
 
-const App = () => {
+function App() {
+
   return (
-    <div>
-
-    </div>
+    <>
+      <Navbar/>
+    </>
   )
 }
 
