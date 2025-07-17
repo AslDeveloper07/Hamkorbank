@@ -41,7 +41,7 @@ body {
   transition: all 0.4s ease;
 }
 .header nav .navLink ul .navItem:hover {
-  border-bottom: 2px solid #35a354;
+  border-bottom: 2px solid #29d65a;
 }
 .header nav .nav-price {
   display: flex;
@@ -77,6 +77,11 @@ body {
   border-radius: 6px;
   background-color: #fff;
   font-size: 16px;
+  transition: all 0.4s ease;
+}
+.header nav .nav-price .navBtn:hover {
+  background-color: #29d65a;
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */

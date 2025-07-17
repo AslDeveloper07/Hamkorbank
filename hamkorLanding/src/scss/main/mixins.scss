@@ -1,9 +1,13 @@
-
-@use './variable.scss' as * ;
-@mixin button ($padding){
+@use "./variable.scss" as *;
+@mixin button($padding) {
   padding: ($padding);
   border: none;
   border-radius: 6px;
   background-color: $white;
   font-size: 16px;
+  transition: all 0.4s ease;
+  &:hover {
+    background-color: $button-bg-color;
+    color: $white;
+  }
 }
