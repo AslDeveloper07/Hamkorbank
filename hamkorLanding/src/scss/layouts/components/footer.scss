@@ -1,6 +1,8 @@
 // src/components/Footer.scss
 @use "./../../main/mixins.scss";
 @use "./../../main/variable.scss" as *;
+
+
 .foot{
   background-color: $navTop-bg-color;
   .footer {
@@ -8,11 +10,11 @@
   // background-color: #f8f8f8;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  // gap: 20px;
 
   &__contact,
   &__links,
-  &__links2,
+  .footer_item,
   &__mobile {
     h3 {
       font-size: 18px;
@@ -21,20 +23,21 @@
     }
 
     ul {
+      width: 300px;
       list-style: none;
       padding: 0;
 
       li {
-        margin-bottom: 6px;
-        font-size: 15px;
+        margin-bottom: 13px;
+        font-size: 17px;
 
         a {
           text-decoration: none;
           color: #333;
 
           &:hover {
-            text-decoration: underline;
-            color: #0077cc;
+            // text-decoration: underline;
+            color: $button-bg-color;
           }
         }
       }
@@ -47,7 +50,7 @@
     }
   }
 
-  &__links2 {
+  &__item {
     i {
       margin-right: 6px;
     }
@@ -55,12 +58,14 @@
 
   &__mobile {
     display: flex;
-    align-items: center;
+    // align-items: center;
+    justify-content: end;
     gap: 10px;
 
     img {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
     }
 
     h4 {

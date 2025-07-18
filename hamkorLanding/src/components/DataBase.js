@@ -231,6 +231,6 @@ export const footerData = {
   mobileBank: {
     title: "Mobil bank",
     description: "Android va iOS uchun ilova",
-    logo: "https://hamkorbank.uz/assets/images/app-icon.svg",
+    logo: "https://hamkorbank.uz/assets/images/static/mobile_app.svg",
   },
 };

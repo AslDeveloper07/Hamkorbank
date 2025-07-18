@@ -549,45 +549,51 @@ body {
   padding: 40px 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
 }
-.foot .footer__contact h3, .foot .footer__links h3, .foot .footer__links2 h3, .foot .footer__mobile h3 {
+.foot .footer__contact h3, .foot .footer__links h3,
+.foot .footer .footer_item h3, .foot .footer__mobile h3 {
   font-size: 18px;
   margin-bottom: 10px;
   color: #222;
 }
-.foot .footer__contact ul, .foot .footer__links ul, .foot .footer__links2 ul, .foot .footer__mobile ul {
+.foot .footer__contact ul, .foot .footer__links ul,
+.foot .footer .footer_item ul, .foot .footer__mobile ul {
+  width: 300px;
   list-style: none;
   padding: 0;
 }
-.foot .footer__contact ul li, .foot .footer__links ul li, .foot .footer__links2 ul li, .foot .footer__mobile ul li {
-  margin-bottom: 6px;
-  font-size: 15px;
+.foot .footer__contact ul li, .foot .footer__links ul li,
+.foot .footer .footer_item ul li, .foot .footer__mobile ul li {
+  margin-bottom: 13px;
+  font-size: 17px;
 }
-.foot .footer__contact ul li a, .foot .footer__links ul li a, .foot .footer__links2 ul li a, .foot .footer__mobile ul li a {
+.foot .footer__contact ul li a, .foot .footer__links ul li a,
+.foot .footer .footer_item ul li a, .foot .footer__mobile ul li a {
   text-decoration: none;
   color: #333;
 }
-.foot .footer__contact ul li a:hover, .foot .footer__links ul li a:hover, .foot .footer__links2 ul li a:hover, .foot .footer__mobile ul li a:hover {
-  text-decoration: underline;
-  color: #0077cc;
+.foot .footer__contact ul li a:hover, .foot .footer__links ul li a:hover,
+.foot .footer .footer_item ul li a:hover, .foot .footer__mobile ul li a:hover {
+  color: #29d65a;
 }
-.foot .footer__contact p, .foot .footer__links p, .foot .footer__links2 p, .foot .footer__mobile p {
+.foot .footer__contact p, .foot .footer__links p,
+.foot .footer .footer_item p, .foot .footer__mobile p {
   margin: 6px 0;
   font-size: 14px;
   color: #555;
 }
-.foot .footer__links2 i {
+.foot .footer__item i {
   margin-right: 6px;
 }
 .foot .footer__mobile {
   display: flex;
-  align-items: center;
+  justify-content: end;
   gap: 10px;
 }
 .foot .footer__mobile img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
 }
 .foot .footer__mobile h4 {
   margin: 0;

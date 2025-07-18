@@ -31,7 +31,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <div className="footer_links2">
+      <div className="footer_item">
         {/* <h3>Ijtimoiy tarmoqlar</h3> */}
         <ul>
           {footerData.links2.map((link2, i) => (
