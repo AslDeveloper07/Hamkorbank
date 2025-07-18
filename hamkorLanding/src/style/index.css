@@ -472,9 +472,9 @@ body {
   font-size: 13px;
 }
 
-.ca {
+.parent {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 16px;
   height: 280px;
@@ -493,22 +493,20 @@ body {
 }
 
 .bankomat {
-  grid-column: span 3/span 3;
+  grid-column: span 6/span 6;
   grid-row: span 3/span 3;
 }
 
 .aloqa {
-  grid-column: span 2/span 2;
+  grid-column: span 3/span 3;
   grid-row: span 3/span 3;
-  grid-column-start: 6;
-  grid-row-start: 1;
+  grid-column-start: 7;
 }
 
 .qabulxona {
-  grid-column: span 2/span 2;
+  grid-column: span 3/span 3;
   grid-row: span 3/span 3;
-  grid-column-start: 4;
-  grid-row-start: 1;
+  grid-column-start: 10;
 }
 
 .textCall {
@@ -525,8 +523,9 @@ body {
 }
 
 .pent p {
-  font-size: 14px;
+  font-size: 16px;
   color: #7a7a7a;
+  margin-bottom: 30px;
 }
 
 .callBtn {
@@ -536,12 +535,67 @@ body {
   background-color: #f0f2f5;
   font-size: 16px;
   transition: all 0.4s ease;
-  margin-top: 30px;
 }
 .callBtn:hover {
   background-color: #29d65a;
   color: #f0f2f5;
   cursor: pointer;
+}
+
+.foot {
+  background-color: #dce2eb;
+}
+.foot .footer {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.foot .footer__contact h3, .foot .footer__links h3, .foot .footer__links2 h3, .foot .footer__mobile h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+}
+.foot .footer__contact ul, .foot .footer__links ul, .foot .footer__links2 ul, .foot .footer__mobile ul {
+  list-style: none;
+  padding: 0;
+}
+.foot .footer__contact ul li, .foot .footer__links ul li, .foot .footer__links2 ul li, .foot .footer__mobile ul li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+.foot .footer__contact ul li a, .foot .footer__links ul li a, .foot .footer__links2 ul li a, .foot .footer__mobile ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.foot .footer__contact ul li a:hover, .foot .footer__links ul li a:hover, .foot .footer__links2 ul li a:hover, .foot .footer__mobile ul li a:hover {
+  text-decoration: underline;
+  color: #0077cc;
+}
+.foot .footer__contact p, .foot .footer__links p, .foot .footer__links2 p, .foot .footer__mobile p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #555;
+}
+.foot .footer__links2 i {
+  margin-right: 6px;
+}
+.foot .footer__mobile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.foot .footer__mobile img {
+  width: 40px;
+  height: 40px;
+}
+.foot .footer__mobile h4 {
+  margin: 0;
+  font-size: 16px;
+}
+.foot .footer__mobile p {
+  font-size: 13px;
+  color: #666;
 }
 
 /*# sourceMappingURL=index.css.map */

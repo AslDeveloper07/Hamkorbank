@@ -205,3 +205,32 @@ export const CallData = [
     callBtn: 'Murojaat qilish'
   }
 ]
+
+// src/data/footerData.js
+export const footerData = {
+  contact: {
+    callCenter: ["0 (800) 1 200 200",],
+    trustPhone: "+998 (78) 150 91 25",
+    corruptionReport: "Korrupsiya haqida xabar berish",
+  },
+  links: [
+    "Bank ofislari va bankomatlar",
+    "Valyutalar kursi",
+    "Shaxsiy kabinet",
+    "Qayta aloqa",
+    "Jismoniy shaxslar uchun",
+
+  ],
+  links2: [
+    "Moliyaviy tashkilotlarga",
+    "Bank haqida",
+    "Matbuot markazi",
+    "Rekvizitlar",
+    "Internet-bank",
+  ],
+  mobileBank: {
+    title: "Mobil bank",
+    description: "Android va iOS uchun ilova",
+    logo: "https://hamkorbank.uz/assets/images/app-icon.svg",
+  },
+};

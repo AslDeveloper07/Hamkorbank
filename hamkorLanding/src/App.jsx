@@ -7,6 +7,7 @@ import About from './components/About'
 import Grids from './components/Grids'
 import Slider from './components/Slider'
 import Calling from './components/Calling'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <About/>
       <Hamkormobile/>
       <Calling/>
+      <Footer/>
     </>
   )
 }
