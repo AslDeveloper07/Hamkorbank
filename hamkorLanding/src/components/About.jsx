@@ -4,8 +4,8 @@ import Button from "./Button";
 
 const About = () => {
   return (
-    <div className="parent container">
-      <div className="div1">
+    <div className="Aboutsection container">
+      <div className="abouts">
         {AboutDiv.map((item, index) => (
           <div key={index} className="tilte">
             <h1>{item.aboutTitle}</h1>
@@ -17,7 +17,7 @@ const About = () => {
 
       {AboutData.map((item, index) => (
         <div key={index} className={item.class}>
-          <div className="stat-item">
+          <div className="text-item">
             <h3>{item.year}</h3>
             <p>{item.text}</p>
           </div>

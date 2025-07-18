@@ -1,14 +1,14 @@
 @use "./../../main/mixins.scss";
 @use "./../../main/variable.scss" as *;
-.parent {
+.Aboutsection {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 17px;
   height: 350px;
-  margin-bottom: 60px;
+  margin-top: 30px;
 
-  .div1 {
+  .abouts {
     grid-column: span 2 / span 2;
     grid-row: span 2 / span 2;
     background-color: red;
@@ -37,14 +37,14 @@
     }
   }
 
-  .div2 {
+  .cards1 {
     grid-column-start: 3;
     background-color: $navTop-bg-color;
     border-radius: 20px;
     padding: 30px;
   }
 
-  .div3 {
+  .cards2 {
     grid-column-start: 3;
     grid-row-start: 2;
     background-color: $navTop-bg-color;
@@ -52,7 +52,7 @@
     padding: 30px;
   }
 
-  .div4 {
+  .cards3 {
     grid-column-start: 4;
     grid-row-start: 1;
     background-color: $navTop-bg-color;
@@ -60,14 +60,14 @@
     padding: 30px;
   }
 
-  .div5 {
+  .cards4 {
     grid-column-start: 4;
     grid-row-start: 2;
     background-color: $navTop-bg-color;
     border-radius: 20px;
     padding: 30px;
   }
-  .stat-item {
+  .text-item{
     width: 200px;
     h3 {
       font-size: 23px;

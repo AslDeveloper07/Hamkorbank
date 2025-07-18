@@ -56,30 +56,39 @@ export const GridData = [
     gridTitle: "Onlayn kredit",
     gridPoragraph: "Pulni 1 daqiqada oling",
     gridBtn: "Rasmiylashtirish",
+    classname: 'online'
   },
   {
     image:
       "https://hamkorbank.uz/assets/images-cache/products/physical/popular-products/visa_classic_xl.d989851b.webP",
     gridTitle: "Visa debet kartasi",
     gridPoragraph: "Butun dunyo bo‘ylab xarid qilish uchun",
+    classname: 'visa'
+
   },
   {
     image:
       "https://hamkorbank.uz/assets/images-cache/products/physical/popular-products/mortgage_xl.d989851b.webP",
     gridTitle: "Ipoteka krediti",
     gridPoragraph: "Uy-joy ta’miri uchun",
+    classname: 'ipoteka'
+
   },
   {
     image:
       "https://hamkorbank.uz/assets/images-cache/products/physical/popular-products/credit_card_xl.d989851b.webP",
     gridTitle: "Kredit karta",
     gridPoragraph: "1 daqiqada ma’qullaymiz, bepul rasmiylashtiramiz",
+    classname: 'kredit'
+
   },
   {
     image:
       "https://hamkorbank.uz/assets/images-cache/products/physical/popular-products/deposit_new_xl.d989851b.webP",
     gridTitle: "Oson 20 omonati",
     gridPoragraph: "Milliy valyutada, foizlar har oyda olinadi",
+    classname: 'omonat'
+
   },
   {
     image:
@@ -87,6 +96,8 @@ export const GridData = [
     gridTitle: "Avtokredit",
     gridPoragraph: "Yangi va minilgan avtomobillar xaridi uchun ",
     gridBtn: "Rasmiylashtirish",
+    classname: 'avtokredit'
+
   },
 ];
 
@@ -117,24 +128,24 @@ export const AboutData = [
     year: "33 yil",
     text: "Siz bilan birga",
     // icons:<BiNetworkChart />
-    class: 'div2'
+    class: 'cards1'
   },
   {
     year: "157 ta ofis",
     text: "Yurtimizning barcha hududlarida",
     // icons:<BiSolidBank />
-    class: 'div3'
+    class: 'cards2'
   },
   {
     year: "3 million",
     text: "Faol mijozlar",
     // icons:<FaUser />
-    class: 'div4'
+    class: 'cards3'
   },
   {
     year: "16 yil",
     text: "Xalqaro bozorda",
     // icons: <AiOutlineGlobal />
-    class: 'div5'
+    class: 'cards4'
   },
 ];

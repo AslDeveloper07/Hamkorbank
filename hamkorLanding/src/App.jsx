@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Credit from './components/Credit'
 import Hamkormobile from './components/Hamkormobile'
 import About from './components/About'
+import Grids from './components/Grids'
 
 function App() {
 
@@ -11,8 +12,9 @@ function App() {
     <>
       <Navbar/>
       <Credit/>
-      <Hamkormobile/>
+      <Grids/>
       <About/>
+      <Hamkormobile/>
     </>
   )
 }
