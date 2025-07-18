@@ -82,6 +82,7 @@ body {
 .header nav .nav-price .navBtn:hover {
   background-color: #29d65a;
   color: #fff;
+  cursor: pointer;
 }
 
 .parentCard {
@@ -134,59 +135,113 @@ body {
 .parentCard .card .cardText .navBtn:hover {
   background-color: #29d65a;
   color: #f0f2f5;
+  cursor: pointer;
 }
 
-.parent {
+.Grid {
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  gap: 8px;
-  height: 750px;
+  gap: 16px;
+  height: 700px;
   margin-top: 20px;
 }
-
-.div17 {
+.Grid .online {
   grid-column: span 5/span 5;
   grid-row: span 3/span 3;
-  background-color: blue;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 20px;
 }
-
-.div18 {
+.Grid .online img {
+  width: 410px;
+  position: relative;
+  right: -190px;
+  top: -100px;
+}
+.Grid .visa {
   grid-column: span 3/span 3;
   grid-row: span 3/span 3;
   grid-column-start: 6;
-  background-color: blue;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 20px;
 }
-
-.div19 {
+.Grid .visa img {
+  width: 320px;
+}
+.Grid .ipoteka {
   grid-column: span 3/span 3;
   grid-row: span 3/span 3;
   grid-column-start: 9;
-  background-color: blue;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 20px;
 }
-
-.div20 {
+.Grid .ipoteka img {
+  width: 320px;
+  position: relative;
+  top: 20px;
+}
+.Grid .avtokredit {
   grid-column: span 5/span 5;
   grid-row: span 3/span 3;
   grid-column-start: 7;
   grid-row-start: 4;
-  background-color: blue;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 20px;
 }
-
-.div21 {
+.Grid .avtokredit img {
+  width: 420px;
+  position: relative;
+  top: -95px;
+  right: -200px;
+}
+.Grid .kredit {
   grid-column: span 3/span 3;
   grid-row: span 3/span 3;
   grid-column-start: 1;
   grid-row-start: 4;
-  background-color: blue;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 20px;
 }
-
-.div22 {
+.Grid .kredit img {
+  width: 300px;
+  position: relative;
+  top: 10px;
+  right: -30px;
+}
+.Grid .omonat {
   grid-column: span 3/span 3;
   grid-row: span 3/span 3;
   grid-column-start: 4;
   grid-row-start: 4;
-  background-color: blue;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  padding: 30px;
+  border-radius: 20px;
+}
+.Grid .omonat img {
+  width: 300px;
+  position: relative;
+  top: 10px;
+  right: -30px;
+}
+.Grid .gridText h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.Grid .gridText p {
+  font-size: 17px;
+  color: #7a7a7a;
 }
 
 .Aboutsection {
@@ -218,6 +273,7 @@ body {
 .Aboutsection .abouts .navBtn:hover {
   background-color: #29d65a;
   color: #fff;
+  cursor: pointer;
 }
 .Aboutsection .abouts .tilte {
   width: 330px;

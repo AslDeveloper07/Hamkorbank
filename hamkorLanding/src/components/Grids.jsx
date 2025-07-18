@@ -1,14 +1,22 @@
 import React from "react";
+import { GridData } from "./DataBase";
+import Button from "./Button";
 
 const Grids = () => {
   return (
     <div class="Grid container">
-      <div class="online">17</div>
-      <div class="visa">18</div>
-      <div class="ipoteka">19</div>
-      <div class="kredit">20</div>
-      <div class="omonat">21</div>
-      <div class="avtokredit">22</div>
+      {
+        GridData.map((grid, i)=>(
+          <div key={i} className={grid.classname}>
+           <div className="gridText">
+             <h3>{grid.gridTitle}</h3>
+            <p>{grid.gridPoragraph}</p>
+            <Button name={grid.gridBtn} />
+           </div>
+           <img src={grid.image} alt={grid.gridTitle} />
+          </div>
+        ))
+      }
     </div>
   );
 };
