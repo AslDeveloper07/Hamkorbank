@@ -1,31 +1,30 @@
-
 @use "./../../main/mixins.scss";
 @use "./../../main/variable.scss" as *;
 
 .Grid {
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 16px;
-    height: 700px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 16px;
+  height: 700px;
+  margin-top: 20px;
 
-.online {
+  .online {
     grid-column: span 5 / span 5;
     grid-row: span 3 / span 3;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
     padding: 30px;
     border-radius: 20px;
-    img{
+    img {
       width: 410px;
       position: relative;
       right: -190px;
       top: -100px;
     }
-}
+  }
 
-.visa {
+  .visa {
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
     grid-column-start: 6;
@@ -33,12 +32,12 @@
     overflow: hidden;
     padding: 30px;
     border-radius: 20px;
-    img{
+    img {
       width: 320px;
     }
-}
+  }
 
-.ipoteka {
+  .ipoteka {
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
     grid-column-start: 9;
@@ -46,14 +45,14 @@
     overflow: hidden;
     padding: 30px;
     border-radius: 20px;
-    img{
+    img {
       width: 320px;
       position: relative;
       top: 20px;
     }
-}
+  }
 
-.avtokredit {
+  .avtokredit {
     grid-column: span 5 / span 5;
     grid-row: span 3 / span 3;
     grid-column-start: 7;
@@ -62,15 +61,15 @@
     overflow: hidden;
     padding: 30px;
     border-radius: 20px;
-    img{
+    img {
       width: 420px;
       position: relative;
       top: -95px;
       right: -200px;
     }
-}
+  }
 
-.kredit {
+  .kredit {
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
     grid-column-start: 1;
@@ -79,15 +78,15 @@
     overflow: hidden;
     padding: 30px;
     border-radius: 20px;
-    img{
+    img {
       width: 300px;
       position: relative;
       top: 10px;
       right: -30px;
     }
-}
+  }
 
-.omonat {
+  .omonat {
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
     grid-column-start: 4;
@@ -96,23 +95,23 @@
     overflow: hidden;
     padding: 30px;
     border-radius: 20px;
-    img{
+    img {
       width: 300px;
       position: relative;
       top: 10px;
       right: -30px;
     }
-}
-.gridText{
-  h3{
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
   }
-  p{
-    font-size: 17px;
-    color: $poragraph-color;
+  .gridText {
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 17px;
+      color: $poragraph-color;
+    }
   }
-}
 
 }

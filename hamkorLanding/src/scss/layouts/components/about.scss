@@ -5,13 +5,12 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 17px;
-  height: 350px;
-  margin-top: 30px;
+  // height: 300px;
+  margin-top: 20px;
 
   .abouts {
     grid-column: span 2 / span 2;
     grid-row: span 2 / span 2;
-    background-color: red;
     background-image: url("https://hamkorbank.uz/assets/images-cache/about_bank_card_xl.27cebd81.webP");
     background-position: center;
     background-size: 100%;
@@ -28,7 +27,7 @@
         margin-bottom: 30px;
         font-size: 27px;
       }
-      p{
+      p {
         width: 320px;
         font-size: 18px;
         color: $white;
@@ -36,38 +35,33 @@
       }
     }
   }
-
-  .cards1 {
-    grid-column-start: 3;
-    background-color: $navTop-bg-color;
+  .cards1,
+  .cards2,
+  .cards3,
+  .cards4 {
+    background-color: $white;
     border-radius: 20px;
     padding: 30px;
+  }
+  .cards1 {
+    grid-column-start: 3;
   }
 
   .cards2 {
     grid-column-start: 3;
     grid-row-start: 2;
-    background-color: $navTop-bg-color;
-    border-radius: 20px;
-    padding: 30px;
   }
 
   .cards3 {
     grid-column-start: 4;
     grid-row-start: 1;
-    background-color: $navTop-bg-color;
-    border-radius: 20px;
-    padding: 30px;
   }
 
   .cards4 {
     grid-column-start: 4;
     grid-row-start: 2;
-    background-color: $navTop-bg-color;
-    border-radius: 20px;
-    padding: 30px;
   }
-  .text-item{
+  .text-item {
     width: 200px;
     h3 {
       font-size: 23px;

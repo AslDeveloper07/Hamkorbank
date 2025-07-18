@@ -13,13 +13,28 @@ export const NavbarData = {
 export const sliderData = [
   {
     image: "https://hamkorbank.uz/assets/images-cache/products/humo/home_promo_xl.eb57a96d.webp",
+    nameSlide: `Uy yoki xonodon ta'mirlash uchun`,
+    slideAbout: '',
+    SlideBtn: 'Batafsil'
   },
   {
     image: "https://hamkorbank.uz/assets/images-cache/products/hero/desktop/mortgage_shinam_promo_xl.278a1114.webP",
+    nameSlide: "HUMO - Kundalik xarajatlar uchun ideal tanlov",
+    slideAbout: '',
+    SlideBtn: 'Kartani rasmiylashtirish'
 
   },
   {
     image: "https://hamkorbank.uz/assets/images-cache/products/hero/desktop/hamkor_app_hero_xl.eb57a96d.webp",
+    nameSlide: 'Hamma kreditlar bir joyda',
+    slideAbout: `Hamkorbank ilovasi orqali istalgan joyda va istalgan vaqtda to'lovlarni amalga oshiring`,
+    SlideBtn: 'Arizani rasmishlashtirish'
+  },
+  {
+    image: "https://hamkorbank.uz/assets/images-cache/products/microloan_online/home_hero_xl.eb57a96d.webp",
+    nameSlide: '',
+    slideAbout: '',
+    SlideBtn: 'Batafsil'
   },
 ];
 

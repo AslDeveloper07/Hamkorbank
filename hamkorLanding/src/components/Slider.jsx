@@ -19,16 +19,34 @@ const Slider = () => {
       <div className="slider-wrapper">
         <AnimatePresence mode="wait">
           <motion.img
-            key={sliderData[current].image}
+               key={sliderData[current].image}
             src={sliderData[current].image}
-            initial={{ opacity: 0, x: 10 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -10 }}
-            transition={{ duration: 0.1 }}
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 1 }}
+            transition={{ duration: 0.01 }}
             className="slider-image"
           />
         </AnimatePresence>
 
+        {/* CAPTION TEXT */}
+        <div className="slider-caption">
+         <div className="slideText">
+           {sliderData[current].nameSlide && (
+            <h2 className="caption-title">{sliderData[current].nameSlide}</h2>
+          )}
+          {sliderData[current].slideAbout && (
+            <p className="caption-desc">{sliderData[current].slideAbout}</p>
+          )}
+         </div>
+          {sliderData[current].SlideBtn && (
+            <button className="caption-btn">
+              {sliderData[current].SlideBtn}
+            </button>
+          )}
+        </div>
+
+        {/* BUTTONS */}
         <div className="slider-buttons">
           <button className="nav-btn" onClick={prevSlide}>
             <MdKeyboardArrowLeft size={30} />
