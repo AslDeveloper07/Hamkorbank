@@ -30,7 +30,7 @@
         // margin-bottom: 50px;
         color: $poragraph-color;
       }
-      .navBtn {
+      .navBtn { 
         @include mixins.button(10px 20px, $body-bg-color);
       }
     }
