@@ -10,6 +10,19 @@ export const NavbarData = {
   ],
 };
 
+export const sliderData = [
+  {
+    image: "https://hamkorbank.uz/assets/images-cache/products/humo/home_promo_xl.eb57a96d.webp",
+  },
+  {
+    image: "https://hamkorbank.uz/assets/images-cache/products/hero/desktop/mortgage_shinam_promo_xl.278a1114.webP",
+
+  },
+  {
+    image: "https://hamkorbank.uz/assets/images-cache/products/hero/desktop/hamkor_app_hero_xl.eb57a96d.webp",
+  },
+];
+
 
 export const CardData = [
   {
