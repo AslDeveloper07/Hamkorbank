@@ -136,6 +136,91 @@ body {
   color: #f0f2f5;
 }
 
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 17px;
+  height: 350px;
+  margin-bottom: 60px;
+}
+.parent .div1 {
+  grid-column: span 2/span 2;
+  grid-row: span 2/span 2;
+  background-color: red;
+  background-image: url("https://hamkorbank.uz/assets/images-cache/about_bank_card_xl.27cebd81.webP");
+  background-position: center;
+  background-size: 100%;
+  border-radius: 20px;
+  padding: 30px;
+}
+.parent .div1 .navBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #fff;
+  font-size: 16px;
+  transition: all 0.4s ease;
+}
+.parent .div1 .navBtn:hover {
+  background-color: #29d65a;
+  color: #fff;
+}
+.parent .div1 .tilte {
+  width: 330px;
+}
+.parent .div1 .tilte h1 {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 30px;
+  font-size: 27px;
+}
+.parent .div1 .tilte p {
+  width: 320px;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 120px;
+}
+.parent .div2 {
+  grid-column-start: 3;
+  background-color: #dce2eb;
+  border-radius: 20px;
+  padding: 30px;
+}
+.parent .div3 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+  background-color: #dce2eb;
+  border-radius: 20px;
+  padding: 30px;
+}
+.parent .div4 {
+  grid-column-start: 4;
+  grid-row-start: 1;
+  background-color: #dce2eb;
+  border-radius: 20px;
+  padding: 30px;
+}
+.parent .div5 {
+  grid-column-start: 4;
+  grid-row-start: 2;
+  background-color: #dce2eb;
+  border-radius: 20px;
+  padding: 30px;
+}
+.parent .stat-item {
+  width: 200px;
+}
+.parent .stat-item h3 {
+  font-size: 23px;
+  font-weight: 500;
+}
+.parent .stat-item p {
+  font-size: 18px;
+  margin-top: 5px;
+  color: #7a7a7a;
+}
+
 .mobile-ilove {
   background-image: url("https://hamkorbank.uz/assets/images-cache/mobile-app/mobile_app_phys_xl.09ca5e41.webp");
   background-size: cover;

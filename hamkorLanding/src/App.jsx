@@ -3,6 +3,7 @@ import './style/index.css'
 import Navbar from './components/Navbar'
 import Credit from './components/Credit'
 import Hamkormobile from './components/Hamkormobile'
+import About from './components/About'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <Credit/>
       <Hamkormobile/>
+      <About/>
     </>
   )
 }

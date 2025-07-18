@@ -1,0 +1,82 @@
+@use "./../../main/mixins.scss";
+@use "./../../main/variable.scss" as *;
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 17px;
+  height: 350px;
+  margin-bottom: 60px;
+
+  .div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    background-color: red;
+    background-image: url("https://hamkorbank.uz/assets/images-cache/about_bank_card_xl.27cebd81.webP");
+    background-position: center;
+    background-size: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    .navBtn {
+      @include mixins.button(10px 20px, $white);
+    }
+    .tilte {
+      width: 330px;
+      h1 {
+        color: $white;
+        font-weight: 500;
+        margin-bottom: 30px;
+        font-size: 27px;
+      }
+      p{
+        width: 320px;
+        font-size: 18px;
+        color: $white;
+        margin-bottom: 120px;
+      }
+    }
+  }
+
+  .div2 {
+    grid-column-start: 3;
+    background-color: $navTop-bg-color;
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  .div3 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    background-color: $navTop-bg-color;
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  .div4 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    background-color: $navTop-bg-color;
+    border-radius: 20px;
+    padding: 30px;
+  }
+
+  .div5 {
+    grid-column-start: 4;
+    grid-row-start: 2;
+    background-color: $navTop-bg-color;
+    border-radius: 20px;
+    padding: 30px;
+  }
+  .stat-item {
+    width: 200px;
+    h3 {
+      font-size: 23px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 18px;
+      margin-top: 5px;
+      color: $poragraph-color;
+    }
+  }
+}
