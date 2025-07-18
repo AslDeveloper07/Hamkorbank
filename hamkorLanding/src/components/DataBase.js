@@ -1,4 +1,3 @@
-
 export const NavbarData = {
   logo: "https://hamkorbank.uz/assets/images/static/logo.svg",
   links: [
@@ -184,32 +183,33 @@ export const AboutData = [
 
 export const CallData = [
   {
-    text: 'Bank ofislari va bankomatlar',
-    poragraphe:'Naqd pul yechib olishingiz uchun va bizning mahsulotlarni rasmiylashtirishingiz uchun yaqin masofada joylashgan bankomatlarni ko‘rsatamiz',
-    img: 'https://hamkorbank.uz/assets/images-cache/icons/map.502aaaa5.webP',
-    clasScal: 'bankomat',
-    callBtn: 'Xaritani ochish'
+    text: "Bank ofislari va bankomatlar",
+    poragraphe:
+      "Naqd pul yechib olishingiz uchun va bizning mahsulotlarni rasmiylashtirishingiz uchun yaqin masofada joylashgan bankomatlarni ko‘rsatamiz",
+    img: "https://hamkorbank.uz/assets/images-cache/icons/map.502aaaa5.webP",
+    clasScal: "bankomat",
+    callBtn: "Xaritani ochish",
   },
   {
-    text: 'Qayta aloqa',
-    poragraphe:'Barcha mahsulotlar bo‘yicha savollarga javob beramiz',
-    img: 'https://hamkorbank.uz/assets/images-cache/icons/message.502aaaa5.webP',
-    clasScal: 'aloqa',
-    callBtn: `Operatorlar bilan bog'lanish`
+    text: "Qayta aloqa",
+    poragraphe: "Barcha mahsulotlar bo‘yicha savollarga javob beramiz",
+    img: "https://hamkorbank.uz/assets/images-cache/icons/message.502aaaa5.webP",
+    clasScal: "aloqa",
+    callBtn: `Operatorlar bilan bog'lanish`,
   },
   {
-    text: 'Virtual qabulxona',
-    poragraphe:'Bank Boshqaruv raisiga murojaat',
-    img: 'https://hamkorbank.uz/assets/images-cache/icons/documents.502aaaa5.webP',
-    clasScal: 'qabulxona',
-    callBtn: 'Murojaat qilish'
-  }
-]
+    text: "Virtual qabulxona",
+    poragraphe: "Bank Boshqaruv raisiga murojaat",
+    img: "https://hamkorbank.uz/assets/images-cache/icons/documents.502aaaa5.webP",
+    clasScal: "qabulxona",
+    callBtn: "Murojaat qilish",
+  },
+];
 
 // src/data/footerData.js
 export const footerData = {
   contact: {
-    callCenter: ["0 (800) 1 200 200",],
+    callCenter: ["0 (800) 1 200 200"],
     trustPhone: "+998 (78) 150 91 25",
     corruptionReport: "Korrupsiya haqida xabar berish",
   },
@@ -219,7 +219,6 @@ export const footerData = {
     "Shaxsiy kabinet",
     "Qayta aloqa",
     "Jismoniy shaxslar uchun",
-
   ],
   links2: [
     "Moliyaviy tashkilotlarga",
@@ -234,3 +233,10 @@ export const footerData = {
     logo: "https://hamkorbank.uz/assets/images/static/mobile_app.svg",
   },
 };
+
+export const navtop = [
+  " Jismoniy shaxslar uchun",
+  "Biznes uchun",
+  "Aksiyador va investorlarga",
+  "Yana",
+];

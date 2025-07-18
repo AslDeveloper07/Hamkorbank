@@ -15,6 +15,71 @@ body {
   margin: 0 auto;
 }
 
+.new {
+  background-color: #dce2eb;
+}
+.new .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.new .navbar ul {
+  display: flex;
+  gap: 8px;
+}
+.new .navbar ul li {
+  list-style: none;
+  padding: 10px;
+  font-size: 14px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.new .navbar ul li:hover {
+  border-bottom: 2px solid #29d65a;
+}
+.new .navbar .navbaritems {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.new .navbar .navbaritems .icones {
+  display: flex;
+  gap: 14px;
+}
+.new .navbar .navbaritems .icones .search:hover,
+.new .navbar .navbaritems .icones .glasses:hover {
+  color: #29d65a;
+  cursor: pointer;
+}
+.new .navbar .navbaritems .location {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.new .navbar .navbaritems .location .locationser {
+  font-size: 14px;
+}
+.new .navbar .navbaritems .location p {
+  font-size: 14px;
+}
+.new .navbar .navbaritems .location:hover {
+  color: #29d65a;
+  cursor: pointer;
+}
+.new .navbar .navbaritems .kabinet {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.new .navbar .navbaritems .kabinet p {
+  font-size: 14px;
+}
+.new .navbar .navbaritems .kabinet:hover {
+  color: #29d65a;
+  cursor: pointer;
+}
+
 .header {
   background-color: #f0f2f5;
   border-bottom: 1px solid #dce2eb;

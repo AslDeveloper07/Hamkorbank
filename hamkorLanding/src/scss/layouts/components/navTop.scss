@@ -1,0 +1,70 @@
+@use "./../../main/mixins.scss";
+@use "./../../main/variable.scss" as *;
+.new {
+  background-color: $navTop-bg-color;
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      gap: 8px;
+      li {
+        list-style: none;
+        padding: 10px;
+        font-size: 14px;
+        border-bottom: 2px solid #00000000;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+          border-bottom: 2px solid $button-bg-color;
+        }
+      }
+    }
+    .navbaritems{
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      .icones {
+        display: flex;
+        gap: 14px;
+        .search,
+        .glasses{
+          &:hover{
+            color: $button-bg-color;
+          cursor: pointer;
+
+          }
+        }
+      }
+      .location{
+        display: flex;
+        gap: 6px;align-items: center;
+        .locationser{
+          font-size: 14px;
+        }
+        p{
+          font-size: 14px;
+        }
+        &:hover{
+          color: $button-bg-color;
+          cursor: pointer;
+        }
+      }
+      .kabinet{
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        p{
+          font-size: 14px;
+        }
+         &:hover{
+          color: $button-bg-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
