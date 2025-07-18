@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { sliderData } from "./DataBase";
 
 const Slider = () => {
@@ -18,20 +19,23 @@ const Slider = () => {
       <div className="slider-wrapper">
         <AnimatePresence mode="wait">
           <motion.img
-            key={sliderData[current]  .image}
+            key={sliderData[current].image}
             src={sliderData[current].image}
-            alt="slide"
-            className="slider-image"
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0, x: 10 }}
             animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 1, x: -10 }}
+            exit={{ opacity: 0, x: -10 }}
             transition={{ duration: 0.1 }}
+            className="slider-image"
           />
         </AnimatePresence>
 
         <div className="slider-buttons">
-          <button className="nav-btn" onClick={prevSlide}>‹</button>
-          <button className="nav-btn" onClick={nextSlide}>›</button>
+          <button className="nav-btn" onClick={prevSlide}>
+            <MdKeyboardArrowLeft size={30} />
+          </button>
+          <button className="nav-btn" onClick={nextSlide}>
+            <MdKeyboardArrowRight size={30} />
+          </button>
         </div>
       </div>
     </div>
