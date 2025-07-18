@@ -3,9 +3,9 @@ import { CallData } from "./DataBase";
 
 const Calling = () => {
   return (
-    <div class="parent container">
+    <div className="parent container">
       {CallData.map((caldata, i) => (
-        <div className={caldata.clasScal}>
+        <div className={caldata.clasScal} key={i}>
           <div className="textCall">
             <h4>{caldata.text}</h4>
             <img src={caldata.img} alt={caldata.text} />
