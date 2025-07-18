@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: space-between;
     color: $white;
-    background: linear-gradient(to top, lab(41.46% -36.05 10.79 / 0.6), transparent);
+    background: linear-gradient(to top, lab(41.44% -36.31 11.35 / 0.582), transparent);
     z-index: 2;
 
     .caption-title {
@@ -34,7 +34,7 @@
       font-weight: 500;
       margin-bottom: 12px;
       max-width: 650px;
-      color: #44756cbb;
+      color: #ffffff;
       line-height: 1.3;
     }
 
@@ -47,12 +47,14 @@
     .caption-btn {
       background-color: $white;
       color: $black;
-      padding: 10px 24px;
+      padding: 15px 24px;
       border: none;
       border-radius: 8px;
       font-weight: 600;
       width: fit-content;
       transition: all 0.3s ease;
+      font-size: 15px;
+      font-weight: 600;
 
       &:hover {
         background-color: $button-bg-color;
@@ -71,7 +73,7 @@
     z-index: 3;
 
     .nav-btn {
-      padding: 6px;
+      padding: 10px;
       border: none;
       border-radius: 6px;
       background-color: $white;

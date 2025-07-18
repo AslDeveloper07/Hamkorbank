@@ -1,3 +1,4 @@
+
 export const NavbarData = {
   logo: "https://hamkorbank.uz/assets/images/static/logo.svg",
   links: [
@@ -12,32 +13,34 @@ export const NavbarData = {
 
 export const sliderData = [
   {
-    image: "https://hamkorbank.uz/assets/images-cache/products/humo/home_promo_xl.eb57a96d.webp",
+    image:
+      "https://hamkorbank.uz/assets/images-cache/products/humo/home_promo_xl.eb57a96d.webp",
     nameSlide: `Uy yoki xonodon ta'mirlash uchun`,
-    slideAbout: '',
-    SlideBtn: 'Batafsil'
+    slideAbout: "",
+    SlideBtn: "Batafsil",
   },
   {
-    image: "https://hamkorbank.uz/assets/images-cache/products/hero/desktop/mortgage_shinam_promo_xl.278a1114.webP",
+    image:
+      "https://hamkorbank.uz/assets/images-cache/products/hero/desktop/mortgage_shinam_promo_xl.278a1114.webP",
     nameSlide: "HUMO - Kundalik xarajatlar uchun ideal tanlov",
-    slideAbout: '',
-    SlideBtn: 'Kartani rasmiylashtirish'
-
+    slideAbout: "",
+    SlideBtn: "Kartani rasmiylashtirish",
   },
   {
-    image: "https://hamkorbank.uz/assets/images-cache/products/hero/desktop/hamkor_app_hero_xl.eb57a96d.webp",
-    nameSlide: 'Hamma kreditlar bir joyda',
+    image:
+      "https://hamkorbank.uz/assets/images-cache/products/hero/desktop/hamkor_app_hero_xl.eb57a96d.webp",
+    nameSlide: "Hamma kreditlar bir joyda",
     slideAbout: `Hamkorbank ilovasi orqali istalgan joyda va istalgan vaqtda to'lovlarni amalga oshiring`,
-    SlideBtn: 'Arizani rasmishlashtirish'
+    SlideBtn: "Arizani rasmishlashtirish",
   },
   {
-    image: "https://hamkorbank.uz/assets/images-cache/products/microloan_online/home_hero_xl.eb57a96d.webp",
-    nameSlide: '',
-    slideAbout: '',
-    SlideBtn: 'Batafsil'
+    image:
+      "https://hamkorbank.uz/assets/images-cache/products/microloan_online/home_hero_xl.eb57a96d.webp",
+    nameSlide: "Hamma kreditlar bir joyda",
+    slideAbout: `HUMO - Kundalik xarajatlar uchun ideal tanlov`,
+    SlideBtn: "Arizani rasmishlashtirish",
   },
 ];
-
 
 export const CardData = [
   {
@@ -94,7 +97,6 @@ export const GridData = [
     gridPoragraph: "Butun dunyo bo‘ylab xarid qilish uchun",
     classname: "visa",
     gridBtn: "Rasmiylashtirish",
-
   },
   {
     image:
@@ -103,7 +105,6 @@ export const GridData = [
     gridPoragraph: "Uy-joy ta’miri uchun",
     classname: "ipoteka",
     gridBtn: "Rasmiylashtirish",
-
   },
 
   {
@@ -113,16 +114,14 @@ export const GridData = [
     gridPoragraph: "1 daqiqada ma’qullaymiz, bepul rasmiylashtiramiz",
     classname: "kredit",
     gridBtn: "Rasmiylashtirish",
-
   },
   {
     image:
-    "https://hamkorbank.uz/assets/images-cache/products/physical/popular-products/deposit_new_xl.d989851b.webP",
+      "https://hamkorbank.uz/assets/images-cache/products/physical/popular-products/deposit_new_xl.d989851b.webP",
     gridTitle: "Oson 20 omonati",
     gridPoragraph: "Milliy valyutada, foizlar har oyda olinadi",
     classname: "omonat",
     gridBtn: "Rasmiylashtirish",
-
   },
   {
     image:
@@ -131,7 +130,6 @@ export const GridData = [
     gridPoragraph: "Yangi va minilgan avtomobillar xaridi uchun ",
     gridBtn: "Rasmiylashtirish",
     classname: "avtokredit",
-
   },
 ];
 
@@ -183,3 +181,27 @@ export const AboutData = [
     class: "cards4",
   },
 ];
+
+export const CallData = [
+  {
+    text: 'Bank ofislari va bankomatlar',
+    poragraphe:'Naqd pul yechib olishingiz uchun va bizning mahsulotlarni rasmiylashtirishingiz uchun yaqin masofada joylashgan bankomatlarni ko‘rsatamiz',
+    img: 'https://hamkorbank.uz/assets/images-cache/icons/map.502aaaa5.webP',
+    clasScal: 'bankomat',
+    callBtn: 'Xaritani ochish'
+  },
+  {
+    text: 'Qayta aloqa',
+    poragraphe:'Barcha mahsulotlar bo‘yicha savollarga javob beramiz',
+    img: 'https://hamkorbank.uz/assets/images-cache/icons/message.502aaaa5.webP',
+    clasScal: 'aloqa',
+    callBtn: `Operatorlar bilan bog'lanish`
+  },
+  {
+    text: 'Virtual qabulxona',
+    poragraphe:'Bank Boshqaruv raisiga murojaat',
+    img: 'https://hamkorbank.uz/assets/images-cache/icons/documents.502aaaa5.webP',
+    clasScal: 'qabulxona',
+    callBtn: 'Murojaat qilish'
+  }
+]
