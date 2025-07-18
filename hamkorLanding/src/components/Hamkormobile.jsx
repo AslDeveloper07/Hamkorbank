@@ -1,22 +1,22 @@
-import React from 'react'
-import { HamkorMobileData } from './DataBase'
-import './../style/index.css'
+import React from "react";
+import { HamkorMobileData } from "./DataBase";
+import "./../style/index.css";
 const Hamkormobile = () => {
   return (
-    <div className='bg-hamkor container'>
+    <div className="bg-hamkor container">
       {HamkorMobileData.map((item, index) => (
-  <div key={index}>
-    <ul>
-      {item.ilovaHaqida.map((text, i) => (
-        <li key={i}>{text}</li>
+        <div key={index}>
+          <ul>
+            {item.ilovaHaqida.map((text, i) => (
+              <li key={i}>{text}</li>
+            ))}
+          </ul>
+          <h5>{item.mobileBank}</h5>
+          <p>{item.mobileBankQR}</p>
+        </div>
       ))}
-    </ul>
-    <h5>{item.mobileBank}</h5>
-    <p>{item.mobileBankQR}</p>
-  </div>
-))}
     </div>
-  )
-}
+  );
+};
 
-export default Hamkormobile
+export default Hamkormobile;
