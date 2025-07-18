@@ -10,6 +10,7 @@ export const NavbarData = {
   ],
 };
 
+
 export const CardData = [
   {
     img: "https://hamkorbank.uz/assets/images-cache/products/physical/home-slider-menu/loans_new_xl.196cae40.webp",
@@ -102,7 +103,7 @@ export const GridData = [
     gridPoragraph: "Yangi va minilgan avtomobillar xaridi uchun ",
     gridBtn: "Rasmiylashtirish",
     classname: "avtokredit",
-    
+
   },
 ];
 

@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Grids = () => {
   return (
-    <div class="Grid container">
+    <div className="Grid container">
       {
         GridData.map((grid, i)=>(
           <div key={i} className={grid.classname}>
