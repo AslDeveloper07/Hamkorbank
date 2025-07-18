@@ -4,34 +4,47 @@
 .parentCard {
   display: flex;
   justify-content: space-between;
+  gap: 20px; // kartalar oralig'ida bo'shliq
   margin-top: 20px;
+
   .card {
-    width: 218px;
-    height: fit-content;
+    flex: 1; // har bir kartani yoyish uchun
+    height: auto;
     background-color: $white;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
     img {
-      width: 220px;
+      width: 100%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
     }
+
     .cardText {
+      flex-grow: 1;
       padding: 0 18px 18px;
       margin-top: 10px;
       display: flex;
       flex-direction: column;
-      justify-content: end;
-      align-items: start;
+      justify-content: space-between;
+      align-items: flex-start;
+
       h3 {
         font-size: 22px;
         font-weight: 500;
         margin-bottom: 10px;
       }
+
       p {
         font-size: 16px;
-        // margin-bottom: 50px;
         color: $poragraph-color;
+        margin-bottom: 20px
       }
-      .navBtn { 
+
+      .navBtn {
         @include mixins.button(10px 20px, $body-bg-color);
+        margin-top: auto;
       }
     }
   }

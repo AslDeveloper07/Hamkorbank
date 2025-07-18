@@ -95,6 +95,7 @@ export const GridData = [
 
 export const HamkorMobileData = [
   {
+    hamkorIlova: 'Приложение Hamkor',
     ilovaHaqida: [
       'Обменивайте валюту в два клика',
       'Переводите до 5 000 000 сум в месяц бесплатно',
