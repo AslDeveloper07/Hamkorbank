@@ -25,7 +25,7 @@ const Grids = () => {
         ))}
       </div>
     </div>
-  );
+  );ttttTGGGgggggGGG
 };
 
 export default Grids;
