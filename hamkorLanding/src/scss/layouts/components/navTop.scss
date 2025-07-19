@@ -20,6 +20,7 @@
           border-bottom: 2px solid $button-bg-color;
         }
       }
+
     }
     .navbaritems {
       display: flex;
@@ -66,14 +67,11 @@
     }
   }
 }
-
-@media (max-width: 768px) {
-  .navbaritems {
-    ul,
-    .search,
-    .location,
-    .kabinet {
-      display: none;
-    }
+@media screen and (max-width: 768px) {
+  .new{
+    display: none;
+  }
+  ul li{
+    display: none;
   }
 }

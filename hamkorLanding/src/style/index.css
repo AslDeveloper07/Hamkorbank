@@ -80,11 +80,11 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .navbaritems ul,
-  .navbaritems .search,
-  .navbaritems .location,
-  .navbaritems .kabinet {
+@media screen and (max-width: 768px) {
+  .new {
+    display: none;
+  }
+  ul li {
     display: none;
   }
 }
