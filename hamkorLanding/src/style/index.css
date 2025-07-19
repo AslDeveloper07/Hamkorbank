@@ -86,49 +86,6 @@ body {
   cursor: pointer;
 }
 
-.language-dropdown {
-  position: relative;
-  display: inline-block;
-}
-.language-dropdown .dropdown-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  background-color: #e5e7eb;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.language-dropdown .dropdown-button:hover {
-  background-color: #d1d5db;
-}
-.language-dropdown .dropdown-button svg {
-  font-size: 20px;
-}
-.language-dropdown .dropdown-button span {
-  font-size: 14px;
-}
-.language-dropdown .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  margin-top: 8px;
-  width: 160px;
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  z-index: 10;
-}
-.language-dropdown .dropdown-menu li {
-  padding: 10px 16px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-.language-dropdown .dropdown-menu li:hover {
-  background-color: #f3f4f6;
-}
-
 .header {
   background-color: #f0f2f5;
   border-bottom: 1px solid #dce2eb;
@@ -717,6 +674,52 @@ body {
 .foot .footer__mobile p {
   font-size: 13px;
   color: #666;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown__toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(221, 221, 221, 0);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.dropdown__toggle:hover {
+  color: rgb(0, 201, 0);
+}
+.dropdown__toggle span {
+  font-size: 14px;
+}
+.dropdown__toggle > .dropdown__icon {
+  font-size: 18px;
+}
+.dropdown__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  width: fit-content;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+  padding: 6px 6px;
+}
+.dropdown__menu .dropdown__item {
+  padding: 10px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.dropdown__menu .dropdown__item:hover {
+  background-color: #f0f0f0;
 }
 
 /*# sourceMappingURL=index.css.map */

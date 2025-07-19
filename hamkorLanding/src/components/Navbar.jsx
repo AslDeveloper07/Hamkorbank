@@ -30,11 +30,11 @@ const Navbar = () => {
               <GoSearch className="search" />
               <RiGlasses2Fill className="glasses" />
             </div>
-            <Dropdown/>
             <div className="location">
               <FaMapMarkerAlt className="locationser" />
               <p>Bank ofislari va bankomatlar</p>
             </div>
+            <Dropdown/>
             <div className="kabinet">
               <ImUser />
               <p>Shaxsiy kabinet</p>
