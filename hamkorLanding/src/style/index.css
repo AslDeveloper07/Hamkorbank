@@ -80,6 +80,14 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .navbaritems ul,
+  .navbaritems .search,
+  .navbaritems .location,
+  .navbaritems .kabinet {
+    display: none;
+  }
+}
 .header {
   background-color: #f0f2f5;
   border-bottom: 1px solid #dce2eb;

@@ -29,7 +29,6 @@ const Slider = () => {
           />
         </AnimatePresence>
 
-        {/* CAPTION TEXT */}
         <div className="slider-caption">
          <div className="slideText">
            {sliderData[current].nameSlide && (
@@ -46,7 +45,6 @@ const Slider = () => {
           )}
         </div>
 
-        {/* BUTTONS */}
         <div className="slider-buttons">
           <button className="nav-btn" onClick={prevSlide}>
             <MdKeyboardArrowLeft size={30} />

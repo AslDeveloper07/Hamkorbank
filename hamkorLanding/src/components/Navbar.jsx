@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="navbar container">
           <ul>
             {navtop.map((navtop, i) => (
-              <li>{navtop}</li>
+              <li key={i}>{navtop}</li>
             ))}
           </ul>
 
