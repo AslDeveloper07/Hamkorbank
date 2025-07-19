@@ -294,31 +294,6 @@ body {
   color: #f0f2f5;
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .parentCard {
-    flex-wrap: wrap;
-  }
-  .parentCard .card {
-    flex: 0 0 calc(33.333% - 14px);
-    margin-bottom: 20px;
-  }
-  .parentCard .card .cardText h3 {
-    font-size: 18px;
-  }
-  .parentCard .card .cardText p {
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-  .parentCard .card .cardText .navBtn {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 480px) {
-  .parentCard .card {
-    flex: 0 0 calc(50% - 10px);
-  }
-}
 
 .Grid {
   display: grid;

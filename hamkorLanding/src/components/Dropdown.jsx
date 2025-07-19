@@ -25,9 +25,9 @@ const Dropdown = () => {
 
       {isOpen && (
         <ul className="dropdown__menu">
-          {languages.map((lang, index) => (
+          {languages.map((lang, i) => (
             <li
-              key={index}
+              key={i}
               className="dropdown__item"
               onClick={() => handleSelect(lang)}
             >

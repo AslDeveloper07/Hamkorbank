@@ -1,6 +1,7 @@
 import React from "react";
 import { GridData } from "./DataBase";
 import Button from "./Button";
+import { MdArrowForwardIos } from "react-icons/md";
 
 const Grids = () => {
   return (
@@ -16,7 +17,7 @@ const Grids = () => {
                 <h3>{grid.gridTitle}</h3>
                 <p>{grid.gridPoragraph}</p>
               </div>
-              <Button name={grid.gridBtn} className="gridBtn" />
+              <Button className="gridBtn" name={grid.gridBtn}/>
             </div>
 
             <img src={grid.image} alt={grid.gridTitle} />

@@ -5,18 +5,22 @@ import { sliderData } from "./DataBase";
 
 const Slider = () => {
   const [current, setCurrent] = useState(0);
+  const [slideContent, setSlideContent] = useState(sliderData[0]);
 
   const nextSlide = () => {
-    setCurrent((prev) => (prev + 1) % sliderData.length);
+    const next = (current + 1) % sliderData.length;
+    setCurrent(next);
+    setSlideContent(sliderData[next]);
   };
 
   const prevSlide = () => {
-    setCurrent((prev) => (prev - 1 + sliderData.length) % sliderData.length);
+    const prev = (current - 1 + sliderData.length) % sliderData.length;
+    setCurrent(prev);
+    setSlideContent(sliderData[prev]);
   };
 
   useEffect(() => {
-    const interval = setInterval(nextSlide, 3000);
-
+    const interval = setInterval(nextSlide, 5000);
     return () => clearInterval(interval);
   }, [current]);
 
@@ -25,31 +29,34 @@ const Slider = () => {
       <div className="slider-wrapper">
         <AnimatePresence mode="wait">
           <motion.img
-               key={sliderData[current].image}
-            src={sliderData[current].image}
-            initial={{ opacity: 1 }}
+            key={slideContent.image}
+            src={slideContent.image}
+            initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 1 }}
-            transition={{ duration: 0.01 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.05 }}
             className="slider-image"
           />
         </AnimatePresence>
 
-        <div className="slider-caption">
+        <motion.div
+          className="slider-caption"
+          initial={{ y: 10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.4 }}
+        >
           <div className="slideText">
-            {sliderData[current].nameSlide && (
-              <h2 className="caption-title">{sliderData[current].nameSlide}</h2>
+            {slideContent.nameSlide && (
+              <h2 className="caption-title">{slideContent.nameSlide}</h2>
             )}
-            {sliderData[current].slideAbout && (
-              <p className="caption-desc">{sliderData[current].slideAbout}</p>
+            {slideContent.slideAbout && (
+              <p className="caption-desc">{slideContent.slideAbout}</p>
             )}
           </div>
-          {sliderData[current].SlideBtn && (
-            <button className="caption-btn">
-              {sliderData[current].SlideBtn}
-            </button>
+          {slideContent.SlideBtn && (
+            <button className="caption-btn">{slideContent.SlideBtn}</button>
           )}
-        </div>
+        </motion.div>
 
         <div className="slider-buttons">
           <button className="nav-btn" onClick={prevSlide}>

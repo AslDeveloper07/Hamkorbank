@@ -48,35 +48,35 @@
     }
   }
 
-  // Media query for 768px and below
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-    .card {
-      flex: 0 0 calc(33.333% - 14px); // 3 cards per row with gap
-      margin-bottom: 20px;
+  // // Media query for 768px and below
+  // @media (max-width: 768px) {
+  //   flex-wrap: wrap;
+  //   .card {
+  //     flex: 0 0 calc(33.333% - 14px); // 3 cards per row with gap
+  //     margin-bottom: 20px;
 
-      .cardText {
-        h3 {
-          font-size: 18px; // Slightly smaller heading
-        }
+  //     .cardText {
+  //       h3 {
+  //         font-size: 18px; // Slightly smaller heading
+  //       }
 
-        p {
-          font-size: 14px; // Slightly smaller text
-          margin-bottom: 15px;
-        }
+  //       p {
+  //         font-size: 14px; // Slightly smaller text
+  //         margin-bottom: 15px;
+  //       }
 
-        .navBtn {
-          padding: 8px 16px; // Smaller button
-          font-size: 14px;
-        }
-      }
-    }
-  }
+  //       .navBtn {
+  //         padding: 8px 16px; // Smaller button
+  //         font-size: 14px;
+  //       }
+  //     }
+  //   }
+  // }
 
-  // Optional: Further adjustment for very small screens
-  @media (max-width: 480px) {
-    .card {
-      flex: 0 0 calc(50% - 10px); // 2 cards per row on very small screens
-    }
-  }
+  // // Optional: Further adjustment for very small screens
+  // @media (max-width: 480px) {
+  //   .card {
+  //     flex: 0 0 calc(50% - 10px); // 2 cards per row on very small screens
+  //   }
+  // }
 }
