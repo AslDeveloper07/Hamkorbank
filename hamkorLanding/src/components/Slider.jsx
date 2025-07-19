@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import { sliderData } from "./DataBase";
@@ -13,6 +13,12 @@ const Slider = () => {
   const prevSlide = () => {
     setCurrent((prev) => (prev - 1 + sliderData.length) % sliderData.length);
   };
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 3000);
+
+    return () => clearInterval(interval);
+  }, [current]);
 
   return (
     <div className="slider container">
@@ -30,14 +36,14 @@ const Slider = () => {
         </AnimatePresence>
 
         <div className="slider-caption">
-         <div className="slideText">
-           {sliderData[current].nameSlide && (
-            <h2 className="caption-title">{sliderData[current].nameSlide}</h2>
-          )}
-          {sliderData[current].slideAbout && (
-            <p className="caption-desc">{sliderData[current].slideAbout}</p>
-          )}
-         </div>
+          <div className="slideText">
+            {sliderData[current].nameSlide && (
+              <h2 className="caption-title">{sliderData[current].nameSlide}</h2>
+            )}
+            {sliderData[current].slideAbout && (
+              <p className="caption-desc">{sliderData[current].slideAbout}</p>
+            )}
+          </div>
           {sliderData[current].SlideBtn && (
             <button className="caption-btn">
               {sliderData[current].SlideBtn}

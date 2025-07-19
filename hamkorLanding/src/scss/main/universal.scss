@@ -12,4 +12,12 @@ body{
 .container{
   max-width: 1400px;
   margin: 0 auto;
+
+}
+@media screen and (max-width: 768px) {
+  .container{
+  max-width: 370px;
+  margin: 0 auto;
+
+}
 }
