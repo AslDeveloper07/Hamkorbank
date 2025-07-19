@@ -7,6 +7,7 @@ import { GoSearch } from "react-icons/go";
 import { RiGlasses2Fill } from "react-icons/ri";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { ImUser } from "react-icons/im";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [prices, setPrices] = useState([
@@ -29,13 +30,13 @@ const Navbar = () => {
               <GoSearch className="search" />
               <RiGlasses2Fill className="glasses" />
             </div>
+            <Dropdown/>
             <div className="location">
               <FaMapMarkerAlt className="locationser" />
               <p>Bank ofislari va bankomatlar</p>
             </div>
             <div className="kabinet">
               <ImUser />
-              {/* <GiWireframeGlobe /> */}
               <p>Shaxsiy kabinet</p>
             </div>
           </div>
