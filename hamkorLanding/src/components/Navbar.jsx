@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { NavbarData, navtop } from "./DataBase";
 import "./../style/index.css";
 import Button from "./Button";
-import { p } from "framer-motion/client";
 import { GoSearch } from "react-icons/go";
 import { RiGlasses2Fill } from "react-icons/ri";
 import { FaMapMarkerAlt } from "react-icons/fa";
