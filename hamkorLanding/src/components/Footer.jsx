@@ -16,7 +16,7 @@ const Footer = () => {
         </ul>
         {footerData.contact.trustPhone}
         <p>Ishonch telefoni:</p>
-        <Button name={footerData.contact.corruptionReport} className="callBtn" />
+        <Button name={footerData.contact.corruptionReport} className="footBtn" />
         {/* <p>{footerData.contact.corruptionReport}</p> */}
       </div>
 
@@ -41,6 +41,8 @@ const Footer = () => {
           ))}
         </ul>
       </div>
+
+
 
       <div className="footer__mobile">
         <img src={footerData.mobileBank.logo} alt="Mobil ilova" />

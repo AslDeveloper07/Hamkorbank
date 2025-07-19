@@ -93,7 +93,7 @@ export const GridData = [
     image:
       "https://hamkorbank.uz/assets/images-cache/products/physical/popular-products/visa_classic_xl.d989851b.webP",
     gridTitle: "Visa debet kartasi",
-    gridPoragraph: "Butun dunyo bo‘ylab xarid qilish uchun",
+    gridPoragraph: "Butun dunyo bo‘ylab ",
     classname: "visa",
     gridBtn: "Rasmiylashtirish",
   },
@@ -110,7 +110,7 @@ export const GridData = [
     image:
       "https://hamkorbank.uz/assets/images-cache/products/physical/popular-products/credit_card_xl.d989851b.webP",
     gridTitle: "Kredit karta",
-    gridPoragraph: "1 daqiqada ma’qullaymiz, bepul rasmiylashtiramiz",
+    gridPoragraph: "1 daqiqada ma’qullaymiz, ",
     classname: "kredit",
     gridBtn: "Rasmiylashtirish",
   },
@@ -118,7 +118,7 @@ export const GridData = [
     image:
       "https://hamkorbank.uz/assets/images-cache/products/physical/popular-products/deposit_new_xl.d989851b.webP",
     gridTitle: "Oson 20 omonati",
-    gridPoragraph: "Milliy valyutada, foizlar har oyda olinadi",
+    gridPoragraph: "Milliy valyutada",
     classname: "omonat",
     gridBtn: "Rasmiylashtirish",
   },

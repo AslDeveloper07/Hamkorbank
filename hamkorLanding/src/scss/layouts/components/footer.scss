@@ -2,83 +2,84 @@
 @use "./../../main/mixins.scss";
 @use "./../../main/variable.scss" as *;
 
-
-.foot{
+.foot {
   background-color: $navTop-bg-color;
   .footer {
-  padding: 40px 0;
-  // background-color: #f8f8f8;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  // gap: 20px;
+    padding: 40px 0;
+    // background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    // gap: 20px;
 
-  &__contact,
-  &__links,
-  .footer_item,
-  &__mobile { 
-    h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #222;
-    }
+    &__contact,
+    &__links,
+    .footer_item,
+    &__mobile {
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #222;
+      }
 
-    ul {
-      width: 300px;
-      list-style: none;
-      padding: 0;
+      ul {
+        width: 300px;
+        list-style: none;
+        padding: 0;
 
-      li {
-        margin-bottom: 13px;
-        font-size: 17px;
+        li {
+          margin-bottom: 20px;
+          font-size: 17px;
 
-        a {
-          text-decoration: none;
-          color: #333;
+          a {
+            text-decoration: none;
+            color: #333;
 
-          &:hover {
-            // text-decoration: underline;
-            color: $button-bg-color;
+            &:hover {
+              // text-decoration: underline;
+              color: $button-bg-color;
+            }
           }
         }
       }
+
+      p {
+        margin: 6px 0;
+        font-size: 14px;
+        color: #555;
+      }
     }
 
-    p {
-      margin: 6px 0;
-      font-size: 14px;
-      color: #555;
+    &__item {
+      i {
+        margin-right: 6px;
+      }
+    }
+    .footBtn {
+      @include mixins.button(10px 20px, $white);
+      margin-top: 40px;
+    }
+    &__mobile {
+      display: flex;
+      // align-items: center;
+      justify-content: end;
+      gap: 10px;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 13px;
+        color: #666;
+      }
     }
   }
-
-  &__item {
-    i {
-      margin-right: 6px;
-    }
-  }
-
-  &__mobile {
-    display: flex;
-    // align-items: center;
-    justify-content: end;
-    gap: 10px;
-
-    img {
-      width: 50px;
-      height: 50px;
-      border-radius: 10px;
-    }
-
-    h4 {
-      margin: 0;
-      font-size: 16px;
-      font-weight: 500;
-    }
-
-    p {
-      font-size: 13px;
-      color: #666;
-    }
-  }
-}
-
 }
