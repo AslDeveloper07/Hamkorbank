@@ -64,7 +64,7 @@ const Navbar = () => {
               ))}
             </div>
           </div>
-          <Button />
+          <Button className="navBtn" />
         </div>
       </nav>
     </header>

@@ -303,16 +303,90 @@ body {
   height: 700px;
   margin-top: 20px;
 }
-.Grid .online {
-  grid-column: span 5/span 5;
-  grid-row: span 3/span 3;
-  background-color: rgb(255, 255, 255);
+.Grid .online,
+.Grid .visa,
+.Grid .ipoteka,
+.Grid .avtokredit,
+.Grid .kredit,
+.Grid .omonat {
+  background-color: #fff;
   overflow: hidden;
   padding: 30px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+.Grid .online .gridientText,
+.Grid .visa .gridientText,
+.Grid .ipoteka .gridientText,
+.Grid .avtokredit .gridientText,
+.Grid .kredit .gridientText,
+.Grid .omonat .gridientText {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Grid .online .gridientText .gridText h3,
+.Grid .visa .gridientText .gridText h3,
+.Grid .ipoteka .gridientText .gridText h3,
+.Grid .avtokredit .gridientText .gridText h3,
+.Grid .kredit .gridientText .gridText h3,
+.Grid .omonat .gridientText .gridText h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.Grid .online .gridientText .gridText p,
+.Grid .visa .gridientText .gridText p,
+.Grid .ipoteka .gridientText .gridText p,
+.Grid .avtokredit .gridientText .gridText p,
+.Grid .kredit .gridientText .gridText p,
+.Grid .omonat .gridientText .gridText p {
+  font-size: 17px;
+  color: #7a7a7a;
+}
+.Grid .online img,
+.Grid .visa img,
+.Grid .ipoteka img,
+.Grid .avtokredit img,
+.Grid .kredit img,
+.Grid .omonat img {
+  width: 100%;
+  max-width: 420px;
+}
+.Grid .online .gridBtn,
+.Grid .visa .gridBtn,
+.Grid .ipoteka .gridBtn,
+.Grid .avtokredit .gridBtn,
+.Grid .kredit .gridBtn,
+.Grid .omonat .gridBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #dce2eb;
+  font-size: 16px;
+  transition: all 0.4s ease;
+  margin-top: auto;
+  z-index: 100;
+}
+.Grid .online .gridBtn:hover,
+.Grid .visa .gridBtn:hover,
+.Grid .ipoteka .gridBtn:hover,
+.Grid .avtokredit .gridBtn:hover,
+.Grid .kredit .gridBtn:hover,
+.Grid .omonat .gridBtn:hover {
+  background-color: #06ca3e;
+  color: #dce2eb;
+  cursor: pointer;
+}
+.Grid .online {
+  grid-column: span 5/span 5;
+  grid-row: span 3/span 3;
 }
 .Grid .online img {
-  width: 410px;
   position: relative;
   right: -190px;
   top: -100px;
@@ -321,10 +395,6 @@ body {
   grid-column: span 3/span 3;
   grid-row: span 3/span 3;
   grid-column-start: 6;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  padding: 30px;
-  border-radius: 20px;
 }
 .Grid .visa img {
   width: 320px;
@@ -333,10 +403,6 @@ body {
   grid-column: span 3/span 3;
   grid-row: span 3/span 3;
   grid-column-start: 9;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  padding: 30px;
-  border-radius: 20px;
 }
 .Grid .ipoteka img {
   width: 320px;
@@ -348,10 +414,6 @@ body {
   grid-row: span 3/span 3;
   grid-column-start: 7;
   grid-row-start: 4;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  padding: 30px;
-  border-radius: 20px;
 }
 .Grid .avtokredit img {
   width: 420px;
@@ -364,10 +426,6 @@ body {
   grid-row: span 3/span 3;
   grid-column-start: 1;
   grid-row-start: 4;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  padding: 30px;
-  border-radius: 20px;
 }
 .Grid .kredit img {
   width: 300px;
@@ -380,25 +438,11 @@ body {
   grid-row: span 3/span 3;
   grid-column-start: 4;
   grid-row-start: 4;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-  padding: 30px;
-  border-radius: 20px;
 }
 .Grid .omonat img {
   width: 300px;
   position: relative;
-  top: 10px;
   right: -30px;
-}
-.Grid .gridText h3 {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-.Grid .gridText p {
-  font-size: 17px;
-  color: #7a7a7a;
 }
 
 .Aboutsection {
@@ -702,7 +746,7 @@ body {
 .dropdown__menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -80px;
   margin-top: 8px;
   width: fit-content;
   background-color: #ffffff;

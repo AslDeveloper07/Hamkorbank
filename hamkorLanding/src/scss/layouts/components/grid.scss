@@ -9,15 +9,59 @@
   height: 700px;
   margin-top: 20px;
 
-  .online {
-    grid-column: span 5 / span 5;
-    grid-row: span 3 / span 3;
-    background-color: rgb(255, 255, 255);
+  // CARD umumiy stil
+  .online,
+  .visa,
+  .ipoteka,
+  .avtokredit,
+  .kredit,
+  .omonat {
+    background-color: #fff;
     overflow: hidden;
     padding: 30px;
     border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    .gridientText {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: space-between;
+      .gridText {
+        h3 {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 17px;
+          color: $poragraph-color;
+        }
+      }
+    }
+
     img {
-      width: 410px;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .gridBtn {
+      @include mixins.button(10px 20px, $navTop-bg-color);
+      margin-top: auto; // 🔥 tugmani pastga itaradi
+      z-index: 100;
+    }
+  }
+
+  // Maxsus joylashuvlar
+  .online {
+    grid-column: span 5 / span 5;
+    grid-row: span 3 / span 3;
+
+    img {
       position: relative;
       right: -190px;
       top: -100px;
@@ -28,10 +72,7 @@
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
     grid-column-start: 6;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    padding: 30px;
-    border-radius: 20px;
+
     img {
       width: 320px;
     }
@@ -41,10 +82,7 @@
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
     grid-column-start: 9;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    padding: 30px;
-    border-radius: 20px;
+
     img {
       width: 320px;
       position: relative;
@@ -57,10 +95,7 @@
     grid-row: span 3 / span 3;
     grid-column-start: 7;
     grid-row-start: 4;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    padding: 30px;
-    border-radius: 20px;
+
     img {
       width: 420px;
       position: relative;
@@ -74,10 +109,7 @@
     grid-row: span 3 / span 3;
     grid-column-start: 1;
     grid-row-start: 4;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    padding: 30px;
-    border-radius: 20px;
+
     img {
       width: 300px;
       position: relative;
@@ -91,27 +123,11 @@
     grid-row: span 3 / span 3;
     grid-column-start: 4;
     grid-row-start: 4;
-    background-color: rgb(255, 255, 255);
-    overflow: hidden;
-    padding: 30px;
-    border-radius: 20px;
+
     img {
       width: 300px;
       position: relative;
-      top: 10px;
       right: -30px;
     }
   }
-  .gridText {
-    h3 {
-      font-size: 20px;
-      font-weight: 500;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 17px;
-      color: $poragraph-color;
-    }
-  }
-
 }

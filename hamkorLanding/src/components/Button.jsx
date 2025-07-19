@@ -1,7 +1,7 @@
 
-const Button = ({className="", name="internet-bank"}) => {
+const Button = ({className="navBtn", name="internet-bank"}) => {
   return (
-    <button className="navBtn">
+    <button className={className}>
       {name}
     </button>
   )

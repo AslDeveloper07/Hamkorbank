@@ -16,7 +16,7 @@ const Footer = () => {
         </ul>
         {footerData.contact.trustPhone}
         <p>Ishonch telefoni:</p>
-        <Button name={footerData.contact.corruptionReport} />
+        <Button name={footerData.contact.corruptionReport} className="callBtn" />
         {/* <p>{footerData.contact.corruptionReport}</p> */}
       </div>
 
