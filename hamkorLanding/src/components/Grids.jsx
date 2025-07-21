@@ -1,4 +1,3 @@
-import React from "react";
 import { GridData } from "./DataBase";
 import Button from "./Button";
 import { MdArrowForwardIos } from "react-icons/md";
