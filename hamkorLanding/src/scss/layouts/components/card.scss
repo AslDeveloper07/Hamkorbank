@@ -6,7 +6,15 @@
   justify-content: space-between;
   gap: 20px;
   margin-top: 20px;
-
+  @media screen and (max-width: 768px) {
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    gap: 0;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 5px;
+  }
   .card {
     flex: 1;
     height: auto;
@@ -14,11 +22,20 @@
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    @media screen and (max-width: 768px) {
+      border-radius: 0;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+    }
 
     img {
       width: 100%;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
+      @media screen and (max-width: 768px) {
+        width: 120px;
+      }
     }
 
     .cardText {
@@ -29,17 +46,28 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
-
+      @media screen and (max-width: 768px) {
+        padding: 0;
+        text-align: center;
+      }
       h3 {
         font-size: 22px;
         font-weight: 500;
         margin-bottom: 10px;
+        @media screen and (max-width: 768px) {
+          font-size: 13px;
+        margin-bottom: 15px;
+
+        }
       }
 
       p {
         font-size: 16px;
         color: $poragraph-color;
         margin-bottom: 20px;
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
       }
 
       .navBtn {
@@ -47,36 +75,4 @@
       }
     }
   }
-
-  // // Media query for 768px and below
-  // @media (max-width: 768px) {
-  //   flex-wrap: wrap;
-  //   .card {
-  //     flex: 0 0 calc(33.333% - 14px); // 3 cards per row with gap
-  //     margin-bottom: 20px;
-
-  //     .cardText {
-  //       h3 {
-  //         font-size: 18px; // Slightly smaller heading
-  //       }
-
-  //       p {
-  //         font-size: 14px; // Slightly smaller text
-  //         margin-bottom: 15px;
-  //       }
-
-  //       .navBtn {
-  //         padding: 8px 16px; // Smaller button
-  //         font-size: 14px;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // // Optional: Further adjustment for very small screens
-  // @media (max-width: 480px) {
-  //   .card {
-  //     flex: 0 0 calc(50% - 10px); // 2 cards per row on very small screens
-  //   }
-  // }
 }

@@ -14,52 +14,80 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
   .mobilePhone {
     width: 540px;
     object-fit: cover;
     position: relative;
     right: 90px;
     top: 20px;
+    @media screen and (max-width: 768px) {
+      width: 860px;
+      position: relative;
+      right: 420px;
+    }
   }
-  .ilova-text{
-    h2{
+  .ilova-text {
+    @media screen and (max-width: 768px) {
+      height: fit-content;
+    }
+    h2 {
       font-weight: 500;
       font-size: 36px;
       margin: 10px 0 30px 0;
+      @media screen and (max-width: 768px) {
+        font-size: 25px;
+      }
     }
     ul {
       margin-bottom: 70px;
-      li{
-      margin: 5px 0 ;
-      font-size: 17px;
-      &::marker{
-        color: $poragraph-color;
+
+      li {
+        margin: 5px 0;
+        font-size: 17px;
+        list-style: none;
+        &::marker {
+          color: $poragraph-color;
+        }
+        @media screen and (max-width: 768px) {
+          padding: 0 0 0 20px;
+          font-size: 15px;
+        margin: 7px 0;
+
+        }
       }
     }
-    }
-    .QRCode{
+    .QRCode {
       display: flex;
       gap: 10px;
-      .QR{
+      .QR {
         background-color: $white;
         padding: 7px;
         width: 80px;
         object-fit: cover;
         border-radius: 10px;
       }
-      .QRcode_text{
+      .QRcode_text {
         width: 200px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 2px 0;
-        h5{
+        h5 {
           font-weight: 400;
           font-size: 17px;
         }
-        p{
+        p {
           font-size: 13px;
         }
+      }
+      @media screen and (max-width: 768px) {
+        display: none;
       }
     }
   }

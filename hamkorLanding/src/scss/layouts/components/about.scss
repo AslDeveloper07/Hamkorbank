@@ -74,3 +74,87 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .Aboutsection {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(
+      11,
+      auto
+    ); // balandlikni kontentga qarab belgilanadi
+    gap: 8px;
+    height: auto;
+
+    .abouts {
+      grid-column: span 2 / span 2;
+      grid-row: span 5 / span 5;
+      grid-row-start: 1;
+      padding: 20px;
+      background-size: cover; // 100% o‘rniga moslashadi
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      height: 360px;
+      .tilte {
+        width: 150px;
+        h1 {
+          font-size: 20px;
+          font-weight: 400;
+        }
+        p{
+          font-size: 13px;
+          width: 200px;
+          margin: 0;
+        }
+      }
+    }
+
+    .cards1,
+    .cards2,
+    .cards3,
+    .cards4 {
+      padding: 15px; // ichki bo‘shliqni kamaytiramiz
+      height: 150px;
+      display: flex;
+      justify-content: end;
+      align-items: end;
+    }
+
+    .cards1 {
+      grid-column: span 1 / span 1;
+      grid-row: span 3 / span 3;
+      grid-column-start: 1;
+      grid-row-start: 6;
+    }
+
+    .cards2 {
+      grid-column: span 1 / span 1;
+      grid-row: span 3 / span 3;
+      grid-column-start: 2;
+      grid-row-start: 6;
+    }
+
+    .cards3 {
+      grid-column: span 1 / span 1;
+      grid-row: span 3 / span 3;
+      grid-column-start: 1;
+      grid-row-start: 9;
+    }
+
+    .cards4 {
+      grid-column: span 1 / span 1;
+      grid-row: span 3 / span 3;
+      grid-column-start: 2;
+      grid-row-start: 9;
+    }
+
+    .text-item {
+      width: 100%; // 200px emas, containerga moslashadi
+      h3 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}

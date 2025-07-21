@@ -44,7 +44,7 @@ const Navbar = () => {
       <nav className="container">
         <div className="navLink">
           <img src={NavbarData.logo} alt="Hamkorbank Logo" />
-          <ul>
+          <ul className="ul">
             {NavbarData.links.map((navItem, inx) => (
               <li key={inx} className="navItem">
                 {navItem}

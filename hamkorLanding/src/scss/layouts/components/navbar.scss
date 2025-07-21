@@ -3,10 +3,6 @@
 .header {
   background-color: $body-bg-color;
   border-bottom: 1px solid $navTop-bg-color;
-// position: fixed;
-// right: 0;
-// left: 0;
-// top: 0;
   nav {
     display: flex;
     justify-content: space-between;
@@ -52,10 +48,9 @@
               margin-bottom: 3px;
             }
             h5 {
-              font-weight: 500
+              font-weight: 500;
             }
           }
-
         }
       }
       .navBtn {
@@ -63,4 +58,24 @@
       }
     }
   }
+}
+
+@media screen and (max-width: 768px) {
+  .new {
+    display: none;
+  }
+.ul li{
+  display: none;
+}
+.nav-price,
+.bank-price,
+.navBtn{
+  display: none;
+}
+.navLink{
+  img{
+    width: 160px;
+    padding: 14px 0;
+  }
+}
 }

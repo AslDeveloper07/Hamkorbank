@@ -5,7 +5,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 const Grids = () => {
   return (
     <div className="gigant container">
-      <h6 style={{ fontSize: "36px", fontWeight: "500", marginTop: "60px" }}>
+      <h6 className="ommabop">
         Ommabop mahsulotlar
       </h6>
       <div className="Grid container">
