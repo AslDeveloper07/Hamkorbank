@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
 * {
   margin: 0;
@@ -1269,6 +1270,84 @@ body {
 @media screen and (max-width: 768px) {
   .bar {
     display: block;
+  }
+}
+.mobile-menu {
+  display: block;
+  padding: 1rem;
+}
+.mobile-menu .menu-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+}
+.mobile-menu .menu-card p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+.mobile-menu .menu-card details {
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+.mobile-menu .menu-card details summary {
+  font-weight: 500;
+  color: #1f2937;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-menu .menu-card details summary::after {
+  content: "▼";
+  font-size: 0.8rem;
+  margin-left: auto;
+  color: #9941fc;
+  transition: transform 0.2s ease;
+}
+.mobile-menu .menu-card details[open] summary::after {
+  transform: rotate(180deg);
+}
+.mobile-menu .menu-card details[open] ul {
+  margin-top: 0.5rem;
+}
+.mobile-menu .menu-card details ul {
+  padding-left: 1rem;
+  list-style: disc;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+.mobile-menu .menu-card details ul li {
+  margin-top: 0.25rem;
+}
+.mobile-menu .search-box {
+  margin-top: 1.5rem;
+}
+.mobile-menu .search-box input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  outline: none;
+  font-size: 0.95rem;
+}
+.mobile-menu .search-box ul {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+  color: #1f2937;
+  font-size: 0.95rem;
+}
+.mobile-menu .search-box ul li {
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
   }
 }
 

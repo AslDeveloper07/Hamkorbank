@@ -1,0 +1,99 @@
+$bg: #fff;
+$text: #1f2937;
+$subtext: #6b7280;
+$primary: #9941fc;
+$border: #e5e7eb;
+
+.mobile-menu {
+  display: block;
+  padding: 1rem;
+
+  .menu-card {
+    background-color: $bg;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    padding: 1rem;
+
+    p {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: $text;
+      margin-bottom: 1rem;
+    }
+
+    details {
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid $border;
+      padding-bottom: 0.5rem;
+      transition: all 0.3s ease;
+
+      summary {
+        font-weight: 500;
+        color: $text;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &::after {
+          content: "▼";
+          font-size: 0.8rem;
+          margin-left: auto;
+          color: $primary;
+          transition: transform 0.2s ease;
+        }
+      }
+
+      &[open] {
+        summary::after {
+          transform: rotate(180deg);
+        }
+
+        ul {
+          margin-top: 0.5rem;
+        }
+      }
+
+      ul {
+        padding-left: 1rem;
+        list-style: disc;
+        font-size: 0.95rem;
+        color: $subtext;
+
+        li {
+          margin-top: 0.25rem;
+        }
+      }
+    }
+  }
+
+  .search-box {
+    margin-top: 1.5rem;
+
+    input {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      border: 1px solid $border;
+      border-radius: 0.5rem;
+      outline: none;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      margin-top: 1rem;
+      list-style: none;
+      padding: 0;
+      color: $text;
+      font-size: 0.95rem;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+
+  // Faqat mobil versiyada ko‘rinadi
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
