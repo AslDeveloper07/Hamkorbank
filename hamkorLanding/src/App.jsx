@@ -8,6 +8,7 @@ import Grids from './components/Grids'
 import Slider from './components/Slider'
 import Calling from './components/Calling'
 import Footer from './components/Footer'
+import MobileMenu from './components/MobileMenu'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Hamkormobile/>
       <Calling/>
       <Footer/>
+      <MobileMenu/>
     </>
   )
 }

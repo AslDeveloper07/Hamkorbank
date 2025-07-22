@@ -1,64 +1,81 @@
-import React from "react";
-import "./MobileMenu.scss";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+
+const menuData = [
+  {
+    title: "Kreditlar",
+    items: ["Avtokredit", "Iste’mol krediti", "Online kredit"],
+  },
+  {
+    title: "Kartalar",
+    items: ["Humo", "Uzcard", "Visa"],
+  },
+  {
+    title: "Ipoteka",
+    items: ["Yangi uylar", "Ikkinchi bozordagi uylar"],
+  },
+  {
+    title: "Omonatlar",
+    items: ["Foizli", "Foizsiz"],
+  },
+  {
+    title: "Valyuta kursi",
+    items: ["USD", "EUR", "RUB"],
+  },
+  {
+    title: "Yana",
+    items: ["Mobil ilova", "Hamyon"],
+  },
+];
+
+const AccordionItem = ({ title, items, isOpen, onToggle }) => {
+  return (
+    <div className="accordion-item">
+      <button className="accordion-header" onClick={onToggle}>
+        {title}
+        {isOpen ? <FiChevronUp /> : <FiChevronDown />}
+      </button>
+      <AnimatePresence initial={false}>
+        {isOpen && (
+          <motion.ul
+            className="accordion-body"
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            {items.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </motion.ul>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
 const MobileMenu = () => {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const handleToggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div className="mobile-menu">
       <div className="menu-card">
-        <p>Jismoniy shaxslar uchun</p>
-
-        <details>
-          <summary>Kreditlar</summary>
-          <ul>
-            <li>Avtokredit</li>
-            <li>Iste’mol krediti</li>
-            <li>Online kredit</li>
-          </ul>
-        </details>
-
-        <details>
-          <summary>Kartalar</summary>
-          <ul>
-            <li>Humo</li>
-            <li>Uzcard</li>
-            <li>Visa</li>
-          </ul>
-        </details>
-
-        <details>
-          <summary>Ipoteka</summary>
-          <ul>
-            <li>Yangi uylar</li>
-            <li>Ikkinchi bozordagi uylar</li>
-          </ul>
-        </details>
-
-        <details>
-          <summary>Omonatlar</summary>
-          <ul>
-            <li>Foizli</li>
-            <li>Foizsiz</li>
-          </ul>
-        </details>
-
-        <details>
-          <summary>Valyuta kursi</summary>
-          <ul>
-            <li>USD</li>
-            <li>EUR</li>
-            <li>RUB</li>
-          </ul>
-        </details>
-
-        <details>
-          <summary>Yana</summary>
-          <ul>
-            <li>Mobil ilova</li>
-            <li>Hamyon</li>
-          </ul>
-        </details>
+        <p className="menu-title">Jismoniy shaxslar uchun</p>
+        {menuData.map((menu, index) => (
+          <AccordionItem
+            key={index}
+            title={menu.title}
+            items={menu.items}
+            isOpen={openIndex === index}
+            onToggle={() => handleToggle(index)}
+          />
+        ))}
       </div>
-
       <div className="search-box">
         <input type="text" placeholder="Saytdan qidirish" />
         <ul>
