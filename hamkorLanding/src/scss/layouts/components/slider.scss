@@ -35,11 +35,14 @@
     );
     z-index: 2;
   @media screen and (max-width: 768px) {
-     background: linear-gradient(
+      background: linear-gradient(
       to top,
-      lab(41.44% -36.31 11.35 / 0),
+      lab(41.44% -36.31 11.35 / 0.582),
       transparent
     );
+      padding: 10px;
+
+
     }
     .caption-title {
       font-size: 46px;
@@ -51,6 +54,7 @@
       @media screen and (max-width: 768px) {
         font-size: 27px;
         color: $black;
+        padding: 0 15px;
       }
     }
 

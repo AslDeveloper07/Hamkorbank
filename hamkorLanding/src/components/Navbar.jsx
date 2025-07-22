@@ -7,6 +7,7 @@ import { RiGlasses2Fill } from "react-icons/ri";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { ImUser } from "react-icons/im";
 import Dropdown from "./Dropdown";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
   const [prices, setPrices] = useState([
@@ -53,8 +54,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="nav-price">
+            <div className="navDrop">
+              <Dropdown  />
+            </div>
+            <HamburgerMenu  />
           <div className="bank-price">
-            <Dropdown/>
             <div className="price">
               {prices.map((item, i) => (
                 <div key={i} className="price1">
