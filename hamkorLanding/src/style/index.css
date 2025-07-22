@@ -1174,7 +1174,7 @@ body {
   left: -80px;
   margin-top: 8px;
   width: fit-content;
-  background-color: #ffffff;
+  background-color: #ff0000;
   border: 1px solid #ddd;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -1184,7 +1184,7 @@ body {
 @media screen and (max-width: 768px) {
   .dropdown__menu {
     position: absolute;
-    left: -34px;
+    left: -20px;
     top: 28px;
   }
 }

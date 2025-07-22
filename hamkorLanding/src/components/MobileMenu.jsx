@@ -30,6 +30,25 @@ const menuData = [
   },
 ];
 
+
+const sidebarVariants = {
+  hidden: { x: "-100%" },
+  visible: {
+    x: 0,
+    transition: { type: "spring", stiffness: 100, damping: 15 }
+  },
+  exit: {
+    x: "-100%",
+    transition: { duration: 0.25 }
+  }
+};
+
+const overlayVariants = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1 },
+  exit: { opacity: 0 }
+};
+
 const AccordionItem = ({ title, items, isOpen, onToggle }) => {
   return (
     <div className="accordion-item">
@@ -67,8 +86,8 @@ const MobileMenu = () => {
     <motion.div
     initial={{width:0, opacity:0}}
     animate={{width:"auto", opacity:1}}
-    exit={{width:0, opacity:0}}
-    transition={{duration:0.1}}
+    exit={{width: 'auto', opacity:1}}
+    transition={{duration:0.01}}
     className="mobile-menu">
       <div className="navmenu">
         <Button className="menu_btn"/>
