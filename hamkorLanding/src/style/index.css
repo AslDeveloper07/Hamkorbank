@@ -814,6 +814,10 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    margin-top: 30px;
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 .mobile-ilove .mobilePhone {
@@ -832,7 +836,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .mobile-ilove .ilova-text {
-    height: fit-content;
+    height: 180px;
   }
 }
 .mobile-ilove .ilova-text h2 {
@@ -968,6 +972,11 @@ body {
   font-size: 36px;
   font-weight: 500;
   margin: 20px 0;
+}
+@media screen and (max-width: 768px) {
+  .hamkorlik {
+    font-size: 24px;
+  }
 }
 
 .ommabop {
