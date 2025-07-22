@@ -1174,7 +1174,7 @@ body {
   left: -80px;
   margin-top: 8px;
   width: fit-content;
-  background-color: #ff0000;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
@@ -1194,9 +1194,11 @@ body {
   cursor: pointer;
   transition: background-color 0.2s ease;
   list-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 .dropdown__menu .dropdown__item:hover {
   background-color: #f0f0f0;
+  border-bottom: 1px solid #06ca3e;
 }
 
 .navDrop {
