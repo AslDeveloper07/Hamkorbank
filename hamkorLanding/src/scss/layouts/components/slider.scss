@@ -12,7 +12,8 @@
     object-fit: cover;
     border-radius: 20px;
     @media screen and (max-width: 768px) {
-      height: 450px;
+      height: 400px;
+      width: 370px;
     }
   }
 
@@ -78,6 +79,9 @@
         color: $white;
         cursor: pointer;
       }
+       @media screen and (max-width: 768px) {
+        width: 100%;
+    }
     }
   }
 
@@ -88,7 +92,9 @@
     display: flex;
     gap: 8px;
     z-index: 3;
-
+ @media screen and (max-width: 768px) {
+ display: none;
+    }
     .nav-btn {
       padding: 10px;
       border: none;

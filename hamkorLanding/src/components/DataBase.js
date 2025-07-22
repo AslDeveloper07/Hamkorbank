@@ -214,7 +214,7 @@ export const footerData = {
     corruptionReport: "Korrupsiya haqida xabar berish",
   },
   links: [
-    "Bank ofislari va bankomatlar", 
+    "Bank ofislari va bankomatlar",
     "Valyutalar kursi",
     "Shaxsiy kabinet",
     "Qayta aloqa",
@@ -240,3 +240,6 @@ export const navtop = [
   "Aksiyador va investorlarga",
   "Yana",
 ];
+
+
+
