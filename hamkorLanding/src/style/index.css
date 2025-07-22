@@ -991,6 +991,44 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .parent {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 10;
+  }
+  .bankomat,
+  .aloqa,
+  .qabulxona {
+    width: 320px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    padding: 20px;
+    border-radius: 16px;
+  }
+  .hamkorlik,
+  .ommabop {
+    font-size: 24px;
+    margin-top: 40px;
+  }
+  .textCall h4 {
+    font-size: 20px;
+  }
+  .textCall img {
+    width: 40px;
+  }
+  .pent p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .callBtn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
 .foot {
   background-color: #dce2eb;
 }
@@ -1025,6 +1063,13 @@ body {
 .foot .footer .footer_item ul li a:hover, .foot .footer__mobile ul li a:hover {
   color: #06ca3e;
 }
+@media screen and (max-width: 768px) {
+  .foot .footer__contact ul li, .foot .footer__links ul li,
+  .foot .footer .footer_item ul li, .foot .footer__mobile ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
 .foot .footer__contact p, .foot .footer__links p,
 .foot .footer .footer_item p, .foot .footer__mobile p {
   margin: 6px 0;
@@ -1048,6 +1093,11 @@ body {
   color: #fff;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .foot .footer .footBtn {
+    display: none;
+  }
+}
 .foot .footer__mobile {
   display: flex;
   justify-content: end;
@@ -1066,6 +1116,15 @@ body {
 .foot .footer__mobile p {
   font-size: 13px;
   color: #666;
+}
+@media screen and (max-width: 768px) {
+  .foot .footer__mobile {
+    display: none;
+  }
+}
+
+.footer__contact {
+  margin-bottom: 30px;
 }
 
 .dropdown {
