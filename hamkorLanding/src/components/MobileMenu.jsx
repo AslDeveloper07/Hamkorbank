@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import Button from "./Button";
 
 const menuData = [
   {
@@ -63,8 +64,17 @@ const MobileMenu = () => {
   };
 
   return (
-    <div className="mobile-menu">
+    <motion.div
+    initial={{width:0, opacity:0}}
+    animate={{width:"auto", opacity:1}}
+    exit={{width:0, opacity:0}}
+    transition={{duration:0.1}}
+    className="mobile-menu">
+      <div className="navmenu">
+        <Button className="menu_btn"/>
+      </div>
       <div className="menu-card">
+
         <p className="menu-title">Jismoniy shaxslar uchun</p>
         {menuData.map((menu, index) => (
           <AccordionItem
@@ -84,7 +94,7 @@ const MobileMenu = () => {
           <li>Valyuta kursi</li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
