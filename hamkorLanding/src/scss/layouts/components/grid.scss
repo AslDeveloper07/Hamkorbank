@@ -50,7 +50,7 @@
     }
 
     .gridBtn {
-      @include mixins.button(10px 20px, $navTop-bg-color);
+      @include mixins.button(10px 20px, $body-bg-color);
       position: relative;
       top: 190px;
       margin-top: auto;

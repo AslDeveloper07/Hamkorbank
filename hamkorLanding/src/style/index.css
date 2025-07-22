@@ -462,7 +462,7 @@ body {
   padding: 10px 20px;
   border: none;
   border-radius: 6px;
-  background-color: #dce2eb;
+  background-color: #f0f2f5;
   font-size: 16px;
   transition: all 0.4s ease;
   position: relative;
@@ -477,7 +477,7 @@ body {
 .Grid .kredit .gridBtn:hover,
 .Grid .omonat .gridBtn:hover {
   background-color: #06ca3e;
-  color: #dce2eb;
+  color: #f0f2f5;
   cursor: pointer;
 }
 .Grid .online {
