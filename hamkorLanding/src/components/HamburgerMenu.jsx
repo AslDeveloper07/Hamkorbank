@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-const HamburgerMenu = () => {
-  const [checked, setChecked] = useState(false);
-
+const HamburgerMenu = ({ checked, setChecked }) => {
   return (
     <>
       <input

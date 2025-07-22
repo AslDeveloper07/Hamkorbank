@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
 * {
   margin: 0;
@@ -1223,6 +1222,7 @@ body {
   gap: var(--gap);
   cursor: pointer;
   position: relative;
+  z-index: 10000;
 }
 
 .bar {
@@ -1273,80 +1273,124 @@ body {
   }
 }
 .mobile-menu {
-  display: block;
   padding: 1rem;
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .mobile-menu .menu-card {
-  background-color: #fff;
+  background-color: white;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  padding: 1rem;
-}
-.mobile-menu .menu-card p {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #1f2937;
-  margin-bottom: 1rem;
-}
-.mobile-menu .menu-card details {
-  margin-bottom: 0.75rem;
-  border-bottom: 1px solid #e5e7eb;
-  padding-bottom: 0.5rem;
+  padding: 1.5rem;
   transition: all 0.3s ease;
 }
-.mobile-menu .menu-card details summary {
+.mobile-menu .menu-card .menu-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+.mobile-menu .menu-card .accordion-item {
+  border-top: 1px solid #edf2f7;
+}
+.mobile-menu .menu-card .accordion-item:last-child {
+  border-bottom: 1px solid #edf2f7;
+}
+.mobile-menu .menu-card .accordion-item .accordion-header {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 1rem;
   font-weight: 500;
-  color: #1f2937;
-  cursor: pointer;
+  padding: 1rem 0;
+  color: #2c3e50;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
-.mobile-menu .menu-card details summary::after {
-  content: "▼";
-  font-size: 0.8rem;
-  margin-left: auto;
-  color: #9941fc;
-  transition: transform 0.2s ease;
+.mobile-menu .menu-card .accordion-item .accordion-header svg {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
 }
-.mobile-menu .menu-card details[open] summary::after {
-  transform: rotate(180deg);
+.mobile-menu .menu-card .accordion-item .accordion-header:hover {
+  color: #06ca3e;
 }
-.mobile-menu .menu-card details[open] ul {
-  margin-top: 0.5rem;
+.mobile-menu .menu-card .accordion-item .accordion-body {
+  overflow: hidden;
 }
-.mobile-menu .menu-card details ul {
-  padding-left: 1rem;
-  list-style: disc;
+.mobile-menu .menu-card .accordion-item .accordion-body li {
+  padding: 0.5rem 0;
+  list-style: none;
+  padding-left: 0.5rem;
+  border-left: 3px solid transparent;
+  color: #555758;
   font-size: 0.95rem;
-  color: #6b7280;
+  transition: all 0.2s ease;
 }
-.mobile-menu .menu-card details ul li {
-  margin-top: 0.25rem;
+.mobile-menu .menu-card .accordion-item .accordion-body li:hover {
+  color: #06ca3e;
+  border-color: #06ca3e;
+  background-color: #f1f5f9;
+  border-radius: 0.3rem;
 }
 .mobile-menu .search-box {
-  margin-top: 1.5rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
 }
 .mobile-menu .search-box input {
   width: 100%;
-  padding: 0.5rem 1rem;
-  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e3f0e2;
   border-radius: 0.5rem;
   outline: none;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+.mobile-menu .search-box input:focus {
+  border-color: #06ca3e;
 }
 .mobile-menu .search-box ul {
   margin-top: 1rem;
   list-style: none;
-  padding: 0;
-  color: #1f2937;
-  font-size: 0.95rem;
 }
 .mobile-menu .search-box ul li {
-  margin-bottom: 0.5rem;
+  padding: 0.6rem 0.5rem;
+  color: #555758;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
-@media (min-width: 768px) {
-  .mobile-menu {
+.mobile-menu .search-box ul li:hover {
+  background-color: #f0f4f8;
+  border-radius: 0.3rem;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 999;
+  box-shadow: -4px 0 15px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  padding: 0;
+}
+.menu-overlay .mobile-menu {
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .menu-overlay {
     display: none;
   }
 }

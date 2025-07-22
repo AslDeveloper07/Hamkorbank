@@ -8,12 +8,16 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { ImUser } from "react-icons/im";
 import Dropdown from "./Dropdown";
 import HamburgerMenu from "./HamburgerMenu";
+import { motion, AnimatePresence } from "framer-motion";
+import MobileMenu from "./MobileMenu";
 
 const Navbar = () => {
   const [prices, setPrices] = useState([
     { label: "Sotib olish", value: "12.600" },
     { label: "Sotib olish", value: "12.600" },
   ]);
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // yangi state
 
   return (
     <header className="header">
@@ -57,7 +61,7 @@ const Navbar = () => {
             <div className="navDrop">
               <Dropdown  />
             </div>
-            <HamburgerMenu  />
+            <HamburgerMenu checked={isMenuOpen} setChecked={setIsMenuOpen}  />
           <div className="bank-price">
             <div className="price">
               {prices.map((item, i) => (
@@ -71,6 +75,19 @@ const Navbar = () => {
           <Button className="navBtn" />
         </div>
       </nav>
+        <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            className="menu-overlay"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ duration: 0.3 }}
+          >
+            <MobileMenu />
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
