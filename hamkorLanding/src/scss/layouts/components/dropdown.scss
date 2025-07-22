@@ -13,7 +13,11 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+@media screen and (max-width:768px) {
+  display: flex;
+  flex-direction: column;
 
+}
     &:hover {
       color: rgb(0, 201, 0);
     }

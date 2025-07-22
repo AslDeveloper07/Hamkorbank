@@ -54,6 +54,7 @@ const Navbar = () => {
         </div>
         <div className="nav-price">
           <div className="bank-price">
+            <Dropdown/>
             <div className="price">
               {prices.map((item, i) => (
                 <div key={i} className="price1">

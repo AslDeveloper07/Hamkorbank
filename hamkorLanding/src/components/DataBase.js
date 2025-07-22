@@ -1,3 +1,7 @@
+import { BiNetworkChart, BiSolidBank } from "react-icons/bi";
+import { FaUser } from "react-icons/fa";
+import { AiOutlineGlobal } from "react-icons/ai";
+
 export const NavbarData = {
   logo: "https://hamkorbank.uz/assets/images/static/logo.svg",
   links: [
@@ -158,25 +162,25 @@ export const AboutData = [
   {
     year: "33 yil",
     text: "Siz bilan birga",
-    // icons:<BiNetworkChart />
+    // icons:<BiNetworkChart />,
     class: "cards1",
   },
   {
     year: "157 ta ofis",
     text: "Yurtimizning barcha hududlarida",
-    // icons:<BiSolidBank />
+    // icons:<BiSolidBank />,
     class: "cards2",
   },
   {
     year: "3 million",
     text: "Faol mijozlar",
-    // icons:<FaUser />
+    // icons:<FaUser />,
     class: "cards3",
   },
   {
     year: "16 yil",
     text: "Xalqaro bozorda",
-    // icons: <AiOutlineGlobal />
+    // icons: <AiOutlineGlobal />,
     class: "cards4",
   },
 ];

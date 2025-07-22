@@ -11,6 +11,7 @@ const About = () => {
       <div className="abouts">
         {AboutDiv.map((item, index) => (
           <div key={index} className="tilte">
+            {/* <item.icons/> */}
             <h1>{item.aboutTitle}</h1>
             <p>{item.about}</p>
             <Button name={item.btn} />
